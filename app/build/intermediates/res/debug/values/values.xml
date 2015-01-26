@@ -6,14 +6,25 @@
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_menu_size">140dp</dimen>
     <dimen name="splash_size">250dp</dimen>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="action_settings">Settings</string>
+    <string name="add_exam_date">Aggiungi data esame</string>
     <string name="app_name">uniApp</string>
+    <string name="carriera">Carriera</string>
     <string name="hello_world">Hello world!</string>
+    <string name="piano_studi">Piano di studi</string>
+    <string name="statistiche">Statistiche</string>
+    <string name="stima">Stima</string>
+    <string name="title_activity_carriera">Carriera</string>
+    <string name="title_activity_first_access">FirstAccessActivity</string>
+    <string name="title_activity_piano_studi">PianoStudi</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_statistiche">Statistiche</string>
+    <string name="title_activity_stima">Stima</string>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/styles.xml -->
     <eat-comment />
 

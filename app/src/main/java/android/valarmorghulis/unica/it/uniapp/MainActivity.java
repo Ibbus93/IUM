@@ -1,9 +1,12 @@
 package android.valarmorghulis.unica.it.uniapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends Activity {
@@ -12,6 +15,38 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Button carrieraButton = (Button) findViewById(R.id.carriera_button);
+        carrieraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goCarriera();
+            }
+        });
+
+        final Button pianoStudiButton = (Button) findViewById(R.id.piano_studi_button);
+        pianoStudiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goPianoStudi();
+            }
+        });
+
+        final Button stimaButton = (Button) findViewById(R.id.stima_button);
+        stimaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goStima();
+            }
+        });
+
+        final Button statisticheButton = (Button) findViewById(R.id.statistiche_button);
+        statisticheButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goStatistiche();
+            }
+        });
     }
 
 
@@ -32,5 +67,25 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void goCarriera(){
+        final Intent carrieraIntent = new Intent(this, Carriera.class);
+        startActivity(carrieraIntent);
+    }
+
+    private void goPianoStudi(){
+        final Intent pianoStudiIntent = new Intent(this, PianoStudi.class);
+        startActivity(pianoStudiIntent);
+    }
+
+    private void goStima(){
+        final Intent stimaIntent = new Intent(this, Stima.class);
+        startActivity(stimaIntent);
+    }
+
+    private void goStatistiche(){
+        final Intent statisticheIntent = new Intent(this, Statistiche.class);
+        startActivity(statisticheIntent);
     }
 }

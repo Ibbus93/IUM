@@ -35,19 +35,41 @@
                 </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
+                <dimen name="button_menu_size" >140dp
+                </dimen>
                 <dimen name="activity_vertical_margin" >16dp
                 </dimen>
             </file>
             <file
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\values\strings.xml"
                 qualifiers="" >
-                <string name="action_settings" >Settings
+                <string name="add_exam_date" >Aggiungi data esame
+                </string>
+                <string name="statistiche" >Statistiche
                 </string>
                 <string name="title_activity_splash" >SplashActivity
                 </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="piano_studi" >Piano di studi
+                </string>
+                <string name="carriera" >Carriera
+                </string>
                 <string name="app_name" >uniApp
                 </string>
+                <string name="title_activity_stima" >Stima
+                </string>
+                <string name="stima" >Stima
+                </string>
                 <string name="hello_world" >Hello world!
+                </string>
+                <string name="title_activity_statistiche" >Statistiche
+                </string>
+                <string name="title_activity_piano_studi" >PianoStudi
+                </string>
+                <string name="title_activity_carriera" >Carriera
+                </string>
+                <string name="title_activity_first_access" >FirstAccessActivity
                 </string>
             </file>
             <file
@@ -102,6 +124,46 @@
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xxhdpi\ic_icon.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
+            <file
+                name="activity_stima"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_stima.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_carriera"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_carriera.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_statistiche"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_statistiche.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="carriera"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\carriera.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_piano_studi"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_piano_studi.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="stima"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\stima.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="statistiche"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\statistiche.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="piano_studi"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\piano_studi.xml"
+                qualifiers=""
+                type="menu" />
         </source>
         <source path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\build\generated\res\rs\debug" />
         <source path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\build\generated\res\generated\debug" />
