@@ -3,6 +3,7 @@ package android.valarmorghulis.unica.it.uniapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Button;
 
 
 public class MainActivity extends Activity {
+
+    private static final String TAG_LOG = MainActivity.class.getName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,21 +73,25 @@ public class MainActivity extends Activity {
     }
 
     private void goCarriera(){
+        Log.d(TAG_LOG, "Carriera clicked");
         final Intent carrieraIntent = new Intent(this, Carriera.class);
         startActivity(carrieraIntent);
     }
 
     private void goPianoStudi(){
+        Log.d(TAG_LOG, "Piano di studi clicked");
         final Intent pianoStudiIntent = new Intent(this, PianoStudi.class);
         startActivity(pianoStudiIntent);
     }
 
     private void goStima(){
+        Log.d(TAG_LOG, "Stima clicked");
         final Intent stimaIntent = new Intent(this, Stima.class);
         startActivity(stimaIntent);
     }
 
     private void goStatistiche(){
+        Log.d(TAG_LOG, "Statistiche clicked");
         final Intent statisticheIntent = new Intent(this, Statistiche.class);
         startActivity(statisticheIntent);
     }

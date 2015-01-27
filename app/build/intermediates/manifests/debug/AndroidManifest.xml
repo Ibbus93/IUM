@@ -15,7 +15,9 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.MainActivity"
-            android:label="@string/app_name" >
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.SplashActivity"
@@ -44,7 +46,7 @@
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.PianoStudi"
             android:configChanges="orientation"
-            android:label="@string/title_activity_piano_studi"
+            android:label="@string/piano_studi"
             android:screenOrientation="portrait" >
         </activity>
         <activity

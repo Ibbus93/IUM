@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <color name="light_blue">#D4FFEB</color>
+    <color name="light_yellow">#FFE86E</color>
+    <color name="orange">#FF9C4A</color>
+    <color name="white">#FFF</color>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="button_menu_size">140dp</dimen>
+    <dimen name="menu_space_under_buttons">40px</dimen>
+    <dimen name="menu_space_value">25px</dimen>
     <dimen name="splash_size">250dp</dimen>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
     <eat-comment />

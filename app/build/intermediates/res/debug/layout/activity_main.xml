@@ -3,6 +3,7 @@
     android:layout_height="fill_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@color/light_yellow"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <Button
@@ -14,6 +15,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
+        android:background="@color/orange"
+        android:textColor="@color/white"
         />
 
     <Button
@@ -22,7 +25,10 @@
         android:text="@string/piano_studi"
         android:id="@+id/piano_studi_button"
         android:layout_alignTop="@+id/carriera_button"
-        android:layout_toEndOf="@+id/carriera_button"/>
+        android:layout_toEndOf="@+id/carriera_button"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        />
 
     <Button
         android:layout_width="@dimen/button_menu_size"
@@ -30,7 +36,10 @@
         android:text="@string/stima"
         android:id="@+id/stima_button"
         android:layout_below="@+id/carriera_button"
-        android:layout_alignStart="@+id/carriera_button"/>
+        android:layout_alignStart="@+id/carriera_button"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        />
 
     <Button
         android:layout_width="@dimen/button_menu_size"
@@ -39,6 +48,57 @@
         android:id="@+id/statistiche_button"
         android:layout_alignTop="@+id/stima_button"
         android:layout_alignStart="@+id/piano_studi_button"
+        android:background="@color/orange"
+        android:textColor="@color/white"
         />
+
+    <Space
+        android:layout_width="@dimen/menu_space_under_buttons"
+        android:layout_height="@dimen/menu_space_under_buttons"
+        android:layout_below="@+id/stima_button"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space_1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/media_aritmetica"
+        android:text="La tua media aritmetica è: "
+        android:layout_below="@+id/space_1"
+        android:layout_alignStart="@+id/stima_button" />
+
+    <Space
+        android:layout_width="@dimen/menu_space_value"
+        android:layout_height="@dimen/menu_space_value"
+        android:layout_below="@+id/media_aritmetica"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space_2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/media_ponderata"
+        android:text="La tua media ponderata è: "
+        android:layout_below="@+id/space_2"
+        android:layout_alignStart="@+id/media_aritmetica" />
+
+    <Space
+        android:layout_width="@dimen/menu_space_value"
+        android:layout_height="@dimen/menu_space_value"
+        android:layout_below="@+id/media_ponderata"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space_3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_exam"
+        android:text="Prossimo esame: "
+        android:layout_below="@+id/space_3"
+        android:layout_alignStart="@+id/media_ponderata" />
+
 
 </RelativeLayout><!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/layout/activity_main.xml -->

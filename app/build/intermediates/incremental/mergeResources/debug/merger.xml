@@ -31,45 +31,65 @@
             <file
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\values\dimens.xml"
                 qualifiers="" >
+                <dimen name="menu_space_under_buttons" >40px
+                </dimen>
                 <dimen name="splash_size" >250dp
                 </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
                 <dimen name="button_menu_size" >140dp
                 </dimen>
-                <dimen name="activity_vertical_margin" >16dp
+                <dimen name="menu_space_value" >25px
                 </dimen>
             </file>
             <file
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\values\strings.xml"
                 qualifiers="" >
+                <string name="action_settings" >Settings
+                </string>
+                <string name="carriera" >Carriera
+                </string>
+                <string name="title_activity_stima" >Stima
+                </string>
+
+                <color name="light_yellow" >#FFE86E
+                </color>
+
+                <string name="title_activity_statistiche" >Statistiche
+                </string>
+
+                <color name="light_blue" >#D4FFEB
+                </color>
+
+                <string name="title_activity_piano_studi" >PianoStudi
+                </string>
+
+                <color name="orange" >#FF9C4A
+                </color>
+
+                <string name="title_activity_first_access" >FirstAccessActivity
+                </string>
                 <string name="add_exam_date" >Aggiungi data esame
                 </string>
                 <string name="statistiche" >Statistiche
                 </string>
                 <string name="title_activity_splash" >SplashActivity
                 </string>
-                <string name="action_settings" >Settings
-                </string>
+
+                <color name="white" >#FFF
+                </color>
+
                 <string name="piano_studi" >Piano di studi
                 </string>
-                <string name="carriera" >Carriera
-                </string>
                 <string name="app_name" >uniApp
-                </string>
-                <string name="title_activity_stima" >Stima
                 </string>
                 <string name="stima" >Stima
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>
-                <string name="title_activity_statistiche" >Statistiche
-                </string>
-                <string name="title_activity_piano_studi" >PianoStudi
-                </string>
                 <string name="title_activity_carriera" >Carriera
-                </string>
-                <string name="title_activity_first_access" >FirstAccessActivity
                 </string>
             </file>
             <file

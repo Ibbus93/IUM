@@ -16,4 +16,9 @@
     <string name="title_activity_statistiche">Statistiche</string>
     <string name="add_exam_date">Aggiungi data esame</string>
 
+    <color name="light_blue">#D4FFEB</color>
+    <color name="orange">#FF9C4A</color>
+    <color name="white">#FFF</color>
+    <color name="light_yellow">#FFE86E</color>
+
 </resources>
