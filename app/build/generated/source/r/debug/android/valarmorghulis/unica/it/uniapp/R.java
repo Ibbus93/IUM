@@ -11,10 +11,14 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int light_blue=0x7f040000;
-        public static final int light_yellow=0x7f040001;
-        public static final int orange=0x7f040002;
-        public static final int white=0x7f040003;
+        public static final int blue=0x7f040000;
+        public static final int green=0x7f040001;
+        public static final int light_blue=0x7f040002;
+        public static final int light_yellow=0x7f040003;
+        public static final int orange=0x7f040004;
+        public static final int pink=0x7f040005;
+        public static final int red=0x7f040006;
+        public static final int white=0x7f040007;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
@@ -29,27 +33,34 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
-        public static final int calendar=0x7f09000a;
-        public static final int carriera_button=0x7f090000;
-        public static final int media_aritmetica=0x7f090005;
-        public static final int media_ponderata=0x7f090007;
-        public static final int next_exam=0x7f090009;
-        public static final int piano_studi_button=0x7f090001;
-        public static final int space_1=0x7f090004;
-        public static final int space_2=0x7f090006;
-        public static final int space_3=0x7f090008;
-        public static final int splash_imageview=0x7f09000b;
-        public static final int statistiche_button=0x7f090003;
-        public static final int stima_button=0x7f090002;
+        public static final int action_settings=0x7f09000f;
+        public static final int calendar=0x7f09000c;
+        public static final int carriera_button=0x7f090002;
+        public static final int esame_detail=0x7f09000e;
+        public static final int esame_detail_container=0x7f090000;
+        public static final int esame_list=0x7f090001;
+        public static final int media_aritmetica=0x7f090007;
+        public static final int media_ponderata=0x7f090009;
+        public static final int next_exam=0x7f09000b;
+        public static final int piano_studi_button=0x7f090003;
+        public static final int space_1=0x7f090006;
+        public static final int space_2=0x7f090008;
+        public static final int space_3=0x7f09000a;
+        public static final int splash_imageview=0x7f09000d;
+        public static final int statistiche_button=0x7f090005;
+        public static final int stima_button=0x7f090004;
     }
     public static final class layout {
         public static final int activity_carriera=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_piano_studi=0x7f030002;
-        public static final int activity_splash=0x7f030003;
-        public static final int activity_statistiche=0x7f030004;
-        public static final int activity_stima=0x7f030005;
+        public static final int activity_esame_detail=0x7f030001;
+        public static final int activity_esame_list=0x7f030002;
+        public static final int activity_esame_twopane=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_piano_studi=0x7f030005;
+        public static final int activity_splash=0x7f030006;
+        public static final int activity_statistiche=0x7f030007;
+        public static final int activity_stima=0x7f030008;
+        public static final int fragment_esame_detail=0x7f030009;
     }
     public static final class menu {
         public static final int carriera=0x7f080000;
@@ -74,6 +85,8 @@ public final class R {
         public static final int title_activity_splash=0x7f06000b;
         public static final int title_activity_statistiche=0x7f06000c;
         public static final int title_activity_stima=0x7f06000d;
+        public static final int title_esame_detail=0x7f06000e;
+        public static final int title_esame_list=0x7f06000f;
     }
     public static final class style {
         /**  Customize your theme here. 

@@ -20,5 +20,9 @@
     <color name="orange">#FF9C4A</color>
     <color name="white">#FFF</color>
     <color name="light_yellow">#FFE86E</color>
+    <color name="pink">#FF99CC</color>
+    <color name="red">#FF4D4D</color>
+    <color name="green">#70DB70</color>
+    <color name="blue">#0066FF</color>
 
 </resources>
