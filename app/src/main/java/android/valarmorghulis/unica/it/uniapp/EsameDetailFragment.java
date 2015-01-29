@@ -52,30 +52,39 @@ public class EsameDetailFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_esame_detail, container, false);
+        String aux;
 
         // Show the dummy nameExam as text in a TextView.
         if (mItem != null) {
-           // ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Ciao");
+
             ((TextView) rootView.findViewById(R.id.exam_name_textView)).setText(mItem.completeNameExam);
             ((TextView) rootView.findViewById(R.id.prof_name_textView)).setText(mItem.nameProf);
-         /*   final TextView nameExam = (TextView) getView().findViewById(R.id.exam_name_textView);
-            nameExam.setText(mItem.nameExam);
 
-            final TextView nameProf = (TextView) getView().findViewById(R.id.prof_name_textView);
-            nameExam.setText(mItem.nameProf);
 
-            final TextView toDo = (TextView) getView().findViewById(R.id.to_do_textView);
-            if(mItem.grade >= 18)
-                toDo.setText("Esame sostenuto");
-            else
-                toDo.setText("Esame da sostenere");
+            if(mItem.done > 0) {
+                ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame passato");
+                ((TextView) rootView.findViewById(R.id.exam_date_textView)).setText(mItem.dateExam);
+            } else {
+                if (mItem.done < 0) {
+                    ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame da dare");
+                    ((TextView) rootView.findViewById(R.id.label_in_data)).setVisibility(View.INVISIBLE);
+                    ((TextView) rootView.findViewById(R.id.exam_date_textView)).setVisibility(View.INVISIBLE);
+                } else {
+                    ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame prenotato");
+                    ((TextView) rootView.findViewById(R.id.exam_date_textView)).setText(mItem.dateExam);
+                }
+            }
 
-            final TextView dataExam = (TextView) getView().findViewById(R.id.exam_date_textView);
-            nameExam.setText(mItem.dateExam);
-
-            final TextView grade = (TextView) getView().findViewById(R.id.grade_textView);
             if(mItem.grade > 0)
-                nameExam.setText(mItem.grade);*/
+                if(mItem.grade < 31)
+                    if(mItem.grade == 10)
+                        ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: idoneità");
+                    else
+                        ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: "+ mItem.grade);
+                else
+                    ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: 30 e lode");
+            else
+                ((TextView) rootView.findViewById(R.id.grade_textView)).setVisibility(View.INVISIBLE);
 
         }
 

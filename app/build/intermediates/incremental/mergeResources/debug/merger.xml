@@ -131,13 +131,15 @@
                 qualifiers="" >
                 <dimen name="menu_space_under_buttons" >40px
                 </dimen>
+                <dimen name="name_exam_value" >30px
+                </dimen>
                 <dimen name="splash_size" >250dp
                 </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
-                <dimen name="button_menu_size" >140dp
-                </dimen>
                 <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="button_menu_size" >140dp
                 </dimen>
                 <dimen name="menu_space_value" >25px
                 </dimen>
@@ -190,21 +192,21 @@
                 </string>
                 <string name="title_activity_splash" >SplashActivity
                 </string>
+                <string name="piano_studi" >Piano di studi
+                </string>
 
                 <color name="white" >#FFF
                 </color>
 
-                <string name="piano_studi" >Piano di studi
-                </string>
                 <string name="app_name" >UniApp
-                </string>
-                <string name="hello_world" >Hello world!
                 </string>
                 <string name="stima" >Stima
                 </string>
-                <string name="title_esame_detail" >Esame Detail
+                <string name="hello_world" >Hello world!
                 </string>
                 <string name="title_activity_carriera" >Carriera
+                </string>
+                <string name="title_esame_detail" >Esame Detail
                 </string>
             </file>
             <file

@@ -20,6 +20,7 @@
     <dimen name="button_menu_size">140dp</dimen>
     <dimen name="menu_space_under_buttons">40px</dimen>
     <dimen name="menu_space_value">25px</dimen>
+    <dimen name="name_exam_value">30px</dimen>
     <dimen name="splash_size">250dp</dimen>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
     <eat-comment />
