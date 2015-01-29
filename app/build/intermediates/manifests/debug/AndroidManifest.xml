@@ -57,7 +57,7 @@
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.EsameListActivity"
-            android:label="@string/title_esame_list" >
+            android:label="@string/title_activity_carriera" >
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.EsameDetailActivity"

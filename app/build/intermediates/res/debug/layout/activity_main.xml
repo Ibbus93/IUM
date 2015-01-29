@@ -48,7 +48,7 @@
         android:id="@+id/statistiche_button"
         android:layout_alignTop="@+id/stima_button"
         android:layout_alignStart="@+id/piano_studi_button"
-        android:background="@color/pink"
+        android:background="@color/orange"
         android:textColor="@color/white"
         />
 

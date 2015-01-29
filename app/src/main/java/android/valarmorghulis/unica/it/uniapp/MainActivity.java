@@ -74,7 +74,8 @@ public class MainActivity extends Activity {
 
     private void goCarriera(){
         Log.d(TAG_LOG, "Carriera clicked");
-        final Intent carrieraIntent = new Intent(this, Carriera.class);
+        //final Intent carrieraIntent = new Intent(this, Carriera.class);
+        final Intent carrieraIntent = new Intent(this, EsameListActivity.class);
         startActivity(carrieraIntent);
     }
 

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.valarmorghulis.unica.it.uniapp.Carriera"
+    android:background="@color/green"
+    android:textColor="@color/white"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/esame_list"
+        android:name="android.valarmorghulis.unica.it.uniapp.EsameListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context="android.valarmorghulis.unica.it.uniapp.EsameListActivity"
+        tools:layout="@android:layout/list_content" />
+</RelativeLayout>
