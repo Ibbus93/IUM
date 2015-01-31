@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="android.valarmorghulis.unica.it.uniapp.Carriera"
-    android:background="@color/green"
+    android:background="@color/pink"
     android:textColor="@color/white"
     >
 

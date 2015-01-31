@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.util.Log;
 import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 /**
@@ -25,10 +26,15 @@ public class EsameDetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Log.d(TAG_LOG);
-        setTitle("Due palle");
+
+        //setTitle(DummyContent.ITEMS.toString());
+
+        //setTitle("Nome Esame");
         setContentView(R.layout.activity_esame_detail);
 
+//        TextView aux = (TextView) findViewById(R.id.exam_name_textView);
+//        String auu = (String) aux.getText();
+//        Log.d(TAG_LOG, auu);
         // Show the Up button in the action bar.
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -54,6 +60,11 @@ public class EsameDetailActivity extends Activity {
                     .commit();
         }
     }
+
+    public void setActionBarTitle(String title){
+        getActionBar().setTitle(title);
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

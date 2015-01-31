@@ -6,7 +6,6 @@
     android:id="@+id/esame_detail"
     >
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,8 +60,9 @@
         android:text="data"
         android:textSize="@dimen/text_detail_fragment"
         android:id="@+id/exam_date_textView"
+        android:layout_toEndOf="@+id/to_do_textView"
         android:layout_alignTop="@+id/label_in_data"
-        android:layout_alignStart="@+id/prof_name_textView" />
+        android:layout_alignStart="@+id/button3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,18 +70,28 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/grade_textView"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:textSize="@dimen/text_detail_fragment"/>
+        android:textSize="@dimen/text_detail_fragment"
+        android:layout_below="@+id/exam_date_textView"
+        android:layout_alignEnd="@+id/prof_name_textView"
+        android:layout_marginTop="146dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Modifica"
-        android:id="@+id/button"
+        android:id="@+id/button3"
+        android:layout_marginBottom="42dp"
+        android:layout_toEndOf="@+id/to_do_textView"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginLeft="-60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elimina"
+        android:id="@+id/button4"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_alignTop="@+id/button3" />
+
 
 </RelativeLayout>

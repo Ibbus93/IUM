@@ -129,17 +129,17 @@
             <file
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\values\dimens.xml"
                 qualifiers="" >
-                <dimen name="menu_space_under_buttons" >40px
+                <dimen name="text_detail_fragment" >30px
                 </dimen>
-                <dimen name="name_exam_value" >30px
+                <dimen name="menu_space_under_buttons" >40px
                 </dimen>
                 <dimen name="splash_size" >250dp
                 </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
-                <dimen name="activity_vertical_margin" >16dp
-                </dimen>
                 <dimen name="button_menu_size" >140dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
                 </dimen>
                 <dimen name="menu_space_value" >25px
                 </dimen>
@@ -149,7 +149,7 @@
                 qualifiers="" >
                 <color name="blue" >#0066FF
                 </color>
-                <color name="green" >#70DB70
+                <color name="green" >#99FF99
                 </color>
 
                 <string name="action_settings" >Settings
@@ -163,7 +163,7 @@
                 <string name="title_esame_list" >Esami
                 </string>
 
-                <color name="pink" >#FF99CC
+                <color name="pink" >#FFCCFF
                 </color>
 
                 <string name="title_activity_stima" >Stima
@@ -192,21 +192,21 @@
                 </string>
                 <string name="title_activity_splash" >SplashActivity
                 </string>
-                <string name="piano_studi" >Piano di studi
-                </string>
 
                 <color name="white" >#FFF
                 </color>
 
-                <string name="app_name" >UniApp
+                <string name="piano_studi" >Piano di studi
                 </string>
-                <string name="stima" >Stima
+                <string name="app_name" >UniApp
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>
-                <string name="title_activity_carriera" >Carriera
+                <string name="stima" >Stima
                 </string>
                 <string name="title_esame_detail" >Esame Detail
+                </string>
+                <string name="title_activity_carriera" >Carriera
                 </string>
             </file>
             <file
@@ -244,6 +244,71 @@
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
+            <file
+                name="year_1"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xhdpi\year_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="year_3"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xhdpi\year_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="year_2"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xxhdpi\year_2.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="year_2"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable\year_2.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="year_2"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xhdpi\year_2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="year_3"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable\year_3.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="custom_list_element"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\custom_list_element.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="year_3"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xxhdpi\year_3.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="year_1"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable\year_1.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="year_2"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-mdpi\year_2.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="year_1"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-xxhdpi\year_1.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="year_1"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-mdpi\year_1.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="year_3"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-mdpi\year_3.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
         </source>
         <source path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\build\generated\res\rs\debug" />
         <source path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\build\generated\res\generated\debug" />

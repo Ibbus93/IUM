@@ -72,11 +72,14 @@ public class EsameListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
+        /*setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
                 getActivity(),
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
-                DummyContent.ITEMS));
+                DummyContent.ITEMS));*/
+
+        CustomArrayAdapter adapt = new CustomArrayAdapter(getActivity(), DummyContent.ITEMS);
+        setListAdapter(adapt);
     }
 
     @Override

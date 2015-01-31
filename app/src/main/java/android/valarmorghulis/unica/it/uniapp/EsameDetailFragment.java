@@ -85,8 +85,9 @@ public class EsameDetailFragment extends Fragment{
                     ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: 30 e lode");
             else
                 ((TextView) rootView.findViewById(R.id.grade_textView)).setVisibility(View.INVISIBLE);
-
         }
+
+        ((EsameDetailActivity) getActivity()).setActionBarTitle(mItem.toString());
 
         return rootView;
     }
