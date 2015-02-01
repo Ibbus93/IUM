@@ -12,13 +12,15 @@ public final class R {
     }
     public static final class color {
         public static final int blue=0x7f040000;
-        public static final int green=0x7f040001;
-        public static final int light_blue=0x7f040002;
-        public static final int light_yellow=0x7f040003;
-        public static final int orange=0x7f040004;
-        public static final int pink=0x7f040005;
-        public static final int red=0x7f040006;
-        public static final int white=0x7f040007;
+        public static final int dark_blue=0x7f040001;
+        public static final int green=0x7f040002;
+        public static final int light_blue=0x7f040003;
+        public static final int light_yellow=0x7f040004;
+        public static final int orange=0x7f040005;
+        public static final int pink=0x7f040006;
+        public static final int purple=0x7f040007;
+        public static final int red=0x7f040008;
+        public static final int white=0x7f040009;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
@@ -37,72 +39,92 @@ public final class R {
         public static final int year_3=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001a;
-        public static final int button3=0x7f090017;
-        public static final int button4=0x7f090019;
+        public static final int action_settings=0x7f09001e;
+        public static final int andamento_media_aritmetica_button=0x7f090011;
+        public static final int andamento_media_ponderata_button=0x7f090010;
+        public static final int andamento_voti_button=0x7f09000f;
+        public static final int button3=0x7f09001c;
+        public static final int button4=0x7f09001d;
         public static final int calendar=0x7f09000c;
         public static final int carriera_button=0x7f090002;
-        public static final int esame_detail=0x7f090011;
+        public static final int crediti_textView=0x7f090018;
+        public static final int esame_detail=0x7f090015;
         public static final int esame_detail_container=0x7f090000;
         public static final int esame_list=0x7f090001;
-        public static final int exam_date_textView=0x7f090016;
-        public static final int exam_name_textView=0x7f090012;
-        public static final int grade_textView=0x7f090018;
-        public static final int icon=0x7f09000e;
-        public static final int label=0x7f09000f;
-        public static final int label2=0x7f090010;
-        public static final int label_in_data=0x7f090015;
+        public static final int exam_name_textView=0x7f090016;
+        public static final int general_button=0x7f09000e;
+        public static final int grade_textView=0x7f09001b;
+        public static final int icon=0x7f090012;
+        public static final int label=0x7f090013;
+        public static final int label2=0x7f090014;
+        public static final int label_in_data=0x7f09001a;
         public static final int media_aritmetica=0x7f090007;
         public static final int media_ponderata=0x7f090009;
         public static final int next_exam=0x7f09000b;
         public static final int piano_studi_button=0x7f090003;
-        public static final int prof_name_textView=0x7f090013;
+        public static final int prof_name_textView=0x7f090017;
         public static final int space_1=0x7f090006;
         public static final int space_2=0x7f090008;
         public static final int space_3=0x7f09000a;
         public static final int splash_imageview=0x7f09000d;
         public static final int statistiche_button=0x7f090005;
         public static final int stima_button=0x7f090004;
-        public static final int to_do_textView=0x7f090014;
+        public static final int to_do_textView=0x7f090019;
     }
     public static final class layout {
-        public static final int activity_carriera=0x7f030000;
-        public static final int activity_esame_detail=0x7f030001;
-        public static final int activity_esame_list=0x7f030002;
-        public static final int activity_esame_twopane=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_piano_studi=0x7f030005;
-        public static final int activity_splash=0x7f030006;
-        public static final int activity_statistiche=0x7f030007;
-        public static final int activity_stima=0x7f030008;
-        public static final int custom_list_element=0x7f030009;
-        public static final int fragment_esame_detail=0x7f03000a;
+        public static final int activity_andamento_media_aritmetica=0x7f030000;
+        public static final int activity_andamento_media_ponderata=0x7f030001;
+        public static final int activity_andamento_voti=0x7f030002;
+        public static final int activity_carriera=0x7f030003;
+        public static final int activity_esame_detail=0x7f030004;
+        public static final int activity_esame_list=0x7f030005;
+        public static final int activity_esame_twopane=0x7f030006;
+        public static final int activity_general_stat=0x7f030007;
+        public static final int activity_main=0x7f030008;
+        public static final int activity_piano_studi=0x7f030009;
+        public static final int activity_splash=0x7f03000a;
+        public static final int activity_statistiche=0x7f03000b;
+        public static final int activity_stima=0x7f03000c;
+        public static final int custom_list_element=0x7f03000d;
+        public static final int fragment_esame_detail=0x7f03000e;
     }
     public static final class menu {
-        public static final int carriera=0x7f080000;
-        public static final int main=0x7f080001;
-        public static final int piano_studi=0x7f080002;
-        public static final int splash=0x7f080003;
-        public static final int statistiche=0x7f080004;
-        public static final int stima=0x7f080005;
+        public static final int andamento_media_aritmetica=0x7f080000;
+        public static final int andamento_media_ponderata=0x7f080001;
+        public static final int andamento_voti=0x7f080002;
+        public static final int carriera=0x7f080003;
+        public static final int general_stat=0x7f080004;
+        public static final int main=0x7f080005;
+        public static final int piano_studi=0x7f080006;
+        public static final int splash=0x7f080007;
+        public static final int statistiche=0x7f080008;
+        public static final int stima=0x7f080009;
     }
     public static final class string {
         public static final int action_settings=0x7f060000;
         public static final int add_exam_date=0x7f060001;
-        public static final int app_name=0x7f060002;
-        public static final int carriera=0x7f060003;
-        public static final int hello_world=0x7f060004;
-        public static final int piano_studi=0x7f060005;
-        public static final int statistiche=0x7f060006;
-        public static final int stima=0x7f060007;
-        public static final int title_activity_carriera=0x7f060008;
-        public static final int title_activity_first_access=0x7f060009;
-        public static final int title_activity_piano_studi=0x7f06000a;
-        public static final int title_activity_splash=0x7f06000b;
-        public static final int title_activity_statistiche=0x7f06000c;
-        public static final int title_activity_stima=0x7f06000d;
-        public static final int title_esame_detail=0x7f06000e;
-        public static final int title_esame_list=0x7f06000f;
+        public static final int andamento_media_aritmetica=0x7f060002;
+        public static final int andamento_media_ponderata=0x7f060003;
+        public static final int andamento_voti=0x7f060004;
+        public static final int app_name=0x7f060005;
+        public static final int carriera=0x7f060006;
+        public static final int general=0x7f060007;
+        public static final int hello_world=0x7f060008;
+        public static final int piano_studi=0x7f060009;
+        public static final int statistiche=0x7f06000a;
+        public static final int stima=0x7f06000b;
+        public static final int title_activity_andamento_media_aritmetica=0x7f06000c;
+        public static final int title_activity_andamento_media_ponderata=0x7f06000d;
+        public static final int title_activity_andamento_voti=0x7f06000e;
+        public static final int title_activity_carriera=0x7f06000f;
+        public static final int title_activity_first_access=0x7f060010;
+        public static final int title_activity_general_stat=0x7f060011;
+        public static final int title_activity_piano_studi=0x7f060012;
+        public static final int title_activity_splash=0x7f060013;
+        public static final int title_activity_statistiche=0x7f060014;
+        public static final int title_activity_stima=0x7f060015;
+        public static final int title_esame_detail=0x7f060016;
+        public static final int title_esame_list=0x7f060017;
     }
     public static final class style {
         /**  Customize your theme here. 

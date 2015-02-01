@@ -33,13 +33,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Crediti: "
+        android:textSize="@dimen/text_detail_fragment"
+        android:id="@+id/crediti_textView"
+        android:layout_below="@+id/prof_name_textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Da dare/dato"
         android:textSize="@dimen/text_detail_fragment"
         android:id="@+id/to_do_textView"
-        android:layout_below="@+id/prof_name_textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_below="@+id/crediti_textView"
+        android:layout_alignStart="@+id/crediti_textView"
+        android:layout_marginBottom="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,20 +61,7 @@
         android:textSize="@dimen/text_detail_fragment"
         android:id="@+id/label_in_data"
         android:layout_below="@+id/to_do_textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="data"
-        android:textSize="@dimen/text_detail_fragment"
-        android:id="@+id/exam_date_textView"
-        android:layout_toEndOf="@+id/to_do_textView"
-        android:layout_alignTop="@+id/label_in_data"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignStart="@+id/to_do_textView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,9 +70,8 @@
         android:text="Large Text"
         android:id="@+id/grade_textView"
         android:textSize="@dimen/text_detail_fragment"
-        android:layout_below="@+id/exam_date_textView"
         android:layout_alignEnd="@+id/prof_name_textView"
-        android:layout_marginTop="146dp" />
+        android:layout_marginTop="340dp" />
 
     <Button
         android:layout_width="wrap_content"

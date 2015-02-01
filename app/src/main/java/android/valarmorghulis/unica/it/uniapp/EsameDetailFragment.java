@@ -57,21 +57,34 @@ public class EsameDetailFragment extends Fragment{
         // Show the dummy nameExam as text in a TextView.
         if (mItem != null) {
 
+            switch(mItem.year){
+                case 1:
+                    rootView.setBackgroundColor(getActivity().getResources().getColor(R.color.red));
+                    break;
+                case 2:
+                    rootView.setBackgroundColor(getActivity().getResources().getColor(R.color.orange));
+                    break;
+                case 3:
+                    rootView.setBackgroundColor(getActivity().getResources().getColor(R.color.dark_blue));
+                    break;
+            }
+
+
+
             ((TextView) rootView.findViewById(R.id.exam_name_textView)).setText(mItem.completeNameExam);
             ((TextView) rootView.findViewById(R.id.prof_name_textView)).setText(mItem.nameProf);
 
 
             if(mItem.done > 0) {
                 ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame passato");
-                ((TextView) rootView.findViewById(R.id.exam_date_textView)).setText(mItem.dateExam);
+                ((TextView) rootView.findViewById(R.id.label_in_data)).setText("In data: "+ mItem.dateExam);
             } else {
                 if (mItem.done < 0) {
                     ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame da dare");
                     ((TextView) rootView.findViewById(R.id.label_in_data)).setVisibility(View.INVISIBLE);
-                    ((TextView) rootView.findViewById(R.id.exam_date_textView)).setVisibility(View.INVISIBLE);
                 } else {
                     ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame prenotato");
-                    ((TextView) rootView.findViewById(R.id.exam_date_textView)).setText(mItem.dateExam);
+                    ((TextView) rootView.findViewById(R.id.label_in_data)).setText("In data: "+ mItem.dateExam);
                 }
             }
 
@@ -85,6 +98,8 @@ public class EsameDetailFragment extends Fragment{
                     ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: 30 e lode");
             else
                 ((TextView) rootView.findViewById(R.id.grade_textView)).setVisibility(View.INVISIBLE);
+
+            ((TextView) rootView.findViewById(R.id.crediti_textView)).setText("Crediti: " + mItem.crediti);
         }
 
         ((EsameDetailActivity) getActivity()).setActionBarTitle(mItem.toString());

@@ -137,9 +137,9 @@
                 </dimen>
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
-                <dimen name="button_menu_size" >140dp
-                </dimen>
                 <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="button_menu_size" >140dp
                 </dimen>
                 <dimen name="menu_space_value" >25px
                 </dimen>
@@ -147,66 +147,89 @@
             <file
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\values\strings.xml"
                 qualifiers="" >
-                <color name="blue" >#0066FF
-                </color>
+                <string name="title_activity_andamento_media_ponderata" >AndamentoMediaPonderata
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+
                 <color name="green" >#99FF99
                 </color>
 
-                <string name="action_settings" >Settings
+                <string name="andamento_media_aritmetica" >Andamento \nmedia \naritmetica
                 </string>
                 <string name="carriera" >Carriera
                 </string>
-
-                <color name="red" >#FF4D4D
-                </color>
-
                 <string name="title_esame_list" >Esami
                 </string>
-
-                <color name="pink" >#FFCCFF
-                </color>
-
-                <string name="title_activity_stima" >Stima
-                </string>
-
-                <color name="light_yellow" >#FFE86E
-                </color>
-
                 <string name="title_activity_statistiche" >Statistiche
                 </string>
 
-                <color name="light_blue" >#D4FFEB
-                </color>
-
-                <string name="title_activity_piano_studi" >PianoStudi
-                </string>
-
-                <color name="orange" >#FF9C4A
+                <color name="orange" >#FFC000
                 </color>
 
                 <string name="title_activity_first_access" >FirstAccessActivity
                 </string>
                 <string name="add_exam_date" >Aggiungi data esame
                 </string>
+                <string name="andamento_media_ponderata" >Andamento \nmedia \nponderata
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="title_activity_carriera" >Carriera
+                </string>
+                <string name="title_activity_andamento_voti" >AndamentoVoti
+                </string>
+
+                <color name="blue" >#0066FF
+                </color>
+
+                <string name="title_activity_andamento_media_aritmetica" >AndamentoMediaAritmetica
+                </string>
+                <string name="general" >Generali
+                </string>
+                <string name="andamento_voti" >Andamento \nVoti
+                </string>
+
+                <color name="red" >#FF4D4D
+                </color>
+
+                <string name="title_activity_stima" >Stima
+                </string>
+
+                <color name="pink" >#FFCCFF
+                </color>
+                <color name="light_yellow" >#FFE86E
+                </color>
+                <color name="purple" >#DDA0DD
+                </color>
+
+                <string name="title_activity_piano_studi" >PianoStudi
+                </string>
+
+                <color name="light_blue" >#D4FFEB
+                </color>
+
+                <string name="title_activity_general_stat" >GeneralStat
+                </string>
                 <string name="statistiche" >Statistiche
                 </string>
                 <string name="title_activity_splash" >SplashActivity
+                </string>
+                <string name="piano_studi" >Piano di studi
                 </string>
 
                 <color name="white" >#FFF
                 </color>
 
-                <string name="piano_studi" >Piano di studi
-                </string>
                 <string name="app_name" >UniApp
                 </string>
-                <string name="hello_world" >Hello world!
-                </string>
+
+                <color name="dark_blue" >#558ED5
+                </color>
+
                 <string name="stima" >Stima
                 </string>
                 <string name="title_esame_detail" >Esame Detail
-                </string>
-                <string name="title_activity_carriera" >Carriera
                 </string>
             </file>
             <file
@@ -309,6 +332,46 @@
                 path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\drawable-mdpi\year_3.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
+            <file
+                name="general_stat"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\general_stat.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_andamento_media_ponderata"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_andamento_media_ponderata.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_general_stat"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_general_stat.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_andamento_voti"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_andamento_voti.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="andamento_voti"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\andamento_voti.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="andamento_media_aritmetica"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\andamento_media_aritmetica.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="andamento_media_ponderata"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\menu\andamento_media_ponderata.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_andamento_media_aritmetica"
+                path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\src\main\res\layout\activity_andamento_media_aritmetica.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\build\generated\res\rs\debug" />
         <source path="C:\Users\Samsung\AndroidStudioProjects\uniApp\app\build\generated\res\generated\debug" />

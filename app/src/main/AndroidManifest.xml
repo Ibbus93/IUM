@@ -51,17 +51,33 @@
         </activity>
         <activity
             android:name=".EsameListActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_carriera" >
+            android:label="@string/title_activity_carriera"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".EsameDetailActivity"
             android:label="@string/title_esame_detail"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".EsameListActivity" >
+            android:parentActivityName=".EsameListActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.valarmorghulis.unica.it.uniapp.EsameListActivity" />
+        </activity>
+        <activity
+            android:name=".statistiche.GeneralStat"
+            android:label="@string/title_activity_general_stat" >
+        </activity>
+        <activity
+            android:name=".statistiche.AndamentoVoti"
+            android:label="@string/title_activity_andamento_voti" >
+        </activity>
+        <activity
+            android:name=".statistiche.AndamentoMediaAritmetica"
+            android:label="@string/title_activity_andamento_media_aritmetica" >
+        </activity>
+        <activity
+            android:name=".statistiche.AndamentoMediaPonderata"
+            android:label="@string/title_activity_andamento_media_ponderata" >
         </activity>
     </application>
 

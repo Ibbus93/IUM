@@ -1,19 +1,55 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="android.valarmorghulis.unica.it.uniapp.Statistiche"
-    android:background="@color/orange">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/orange"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:text="@string/statistiche"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/white"/>
+    <Button
+        android:layout_width="@dimen/button_menu_size"
+        android:layout_height="@dimen/button_menu_size"
+        android:text="@string/general"
+        android:id="@+id/general_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="@dimen/button_menu_size"
+        android:layout_height="@dimen/button_menu_size"
+        android:text="@string/andamento_voti"
+        android:id="@+id/andamento_voti_button"
+        android:layout_alignTop="@+id/general_button"
+        android:layout_toEndOf="@+id/general_button"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="@dimen/button_menu_size"
+        android:layout_height="@dimen/button_menu_size"
+        android:text="@string/andamento_media_ponderata"
+        android:id="@+id/andamento_media_ponderata_button"
+        android:layout_below="@+id/general_button"
+        android:layout_alignStart="@+id/general_button"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="@dimen/button_menu_size"
+        android:layout_height="@dimen/button_menu_size"
+        android:text="@string/andamento_media_aritmetica"
+        android:id="@+id/andamento_media_aritmetica_button"
+        android:layout_alignTop="@+id/andamento_media_ponderata_button"
+        android:layout_alignStart="@+id/andamento_voti_button"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
 
 </RelativeLayout>
