@@ -87,15 +87,16 @@ public class EsameDetailFragment extends Fragment{
                 }
             }
 
-            if(mItem.grade > 0)
-                if(mItem.grade < 31)
-                    if(mItem.grade == 10)
-                        ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: idoneità");
+            if(mItem.grade > 0) {
+                if (mItem.grade == 10) {
+                    ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: idoneità");
+                }else {
+                    if (!mItem.lode)
+                        ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: " + mItem.grade);
                     else
-                        ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: "+ mItem.grade);
-                else
-                    ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: 30 e lode");
-            else
+                        ((TextView) rootView.findViewById(R.id.grade_textView)).setText("Voto: 30 e lode");
+                }
+            }else
                 ((TextView) rootView.findViewById(R.id.grade_textView)).setVisibility(View.INVISIBLE);
 
             ((TextView) rootView.findViewById(R.id.crediti_textView)).setText("Crediti: " + mItem.crediti);

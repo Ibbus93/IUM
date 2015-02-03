@@ -993,15 +993,15 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070015;
         public static final int action_menu_presenter=0x7f070016;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f070067;
+        public static final int action_settings=0x7f070068;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int always=0x7f07000f;
         public static final int andamento_media_aritmetica_button=0x7f07005b;
         public static final int andamento_media_ponderata_button=0x7f07005a;
         public static final int andamento_voti_button=0x7f070059;
         public static final int beginning=0x7f07000a;
-        public static final int button3=0x7f070065;
-        public static final int button4=0x7f070066;
+        public static final int button3=0x7f070066;
+        public static final int button4=0x7f070067;
         public static final int cal=0x7f070056;
         public static final int carriera_button=0x7f07004c;
         public static final int checkbox=0x7f07002d;
@@ -1035,6 +1035,7 @@ containing a value of this type.
         public static final int label=0x7f07005c;
         public static final int label2=0x7f07005d;
         public static final int label_in_data=0x7f070063;
+        public static final int linear_buttons=0x7f070065;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070029;
         public static final int media_aritmetica=0x7f070051;

@@ -64,32 +64,37 @@
         android:layout_alignStart="@+id/to_do_textView" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/grade_textView"
         android:textSize="@dimen/text_detail_fragment"
-        android:layout_alignEnd="@+id/prof_name_textView"
-        android:layout_marginTop="340dp" />
+        android:gravity="center"
+        android:layout_marginTop="350dp"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Modifica"
-        android:id="@+id/button3"
-        android:layout_marginBottom="42dp"
-        android:layout_toEndOf="@+id/to_do_textView"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="-60dp" />
+        android:gravity="center"
+        android:id="@+id/linear_buttons"
+        android:layout_marginTop="440dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Elimina"
-        android:id="@+id/button4"
-        android:layout_toEndOf="@+id/button3"
-        android:layout_alignTop="@+id/button3" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifica"
+            android:id="@+id/edit_exam_button"
+            />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elimina"
+            android:id="@+id/button4"
+            android:layout_toEndOf="@+id/edit_exam_button"
+            android:layout_alignTop="@+id/delete_exam_button" />
+    </LinearLayout>
 
 </RelativeLayout>

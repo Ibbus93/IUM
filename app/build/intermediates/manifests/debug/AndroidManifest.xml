@@ -32,12 +32,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="android.valarmorghulis.unica.it.uniapp.Carriera"
-            android:configChanges="orientation"
-            android:label="@string/title_activity_carriera"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="android.valarmorghulis.unica.it.uniapp.Stima"
             android:configChanges="orientation"
             android:label="@string/title_activity_stima"
@@ -71,19 +65,23 @@
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.statistiche.GeneralStat"
-            android:label="@string/title_activity_general_stat" >
+            android:label="@string/title_activity_general_stat"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.statistiche.AndamentoVoti"
-            android:label="@string/title_activity_andamento_voti" >
+            android:label="@string/title_activity_andamento_voti"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.statistiche.AndamentoMediaAritmetica"
-            android:label="@string/title_activity_andamento_media_aritmetica" >
+            android:label="@string/title_activity_andamento_media_aritmetica"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="android.valarmorghulis.unica.it.uniapp.statistiche.AndamentoMediaPonderata"
-            android:label="@string/title_activity_andamento_media_ponderata" >
+            android:label="@string/title_activity_andamento_media_ponderata"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
