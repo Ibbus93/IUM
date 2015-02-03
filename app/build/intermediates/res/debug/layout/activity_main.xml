@@ -66,7 +66,9 @@
         android:id="@+id/media_aritmetica"
         android:text="La tua media aritmetica è: "
         android:layout_below="@+id/space_1"
-        android:layout_alignStart="@+id/stima_button" />
+        android:layout_alignStart="@+id/stima_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp" />
 
     <Space
         android:layout_width="@dimen/menu_space_value"
@@ -74,7 +76,7 @@
         android:layout_below="@+id/media_aritmetica"
         android:layout_alignParentStart="true"
         android:id="@+id/space_2"
-        />
+        android:layout_marginBottom="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +84,8 @@
         android:id="@+id/media_ponderata"
         android:text="La tua media ponderata è: "
         android:layout_below="@+id/space_2"
-        android:layout_alignStart="@+id/media_aritmetica" />
+        android:layout_alignStart="@+id/media_aritmetica"
+        android:layout_marginBottom="5dp" />
 
     <Space
         android:layout_width="@dimen/menu_space_value"
@@ -90,7 +93,7 @@
         android:layout_below="@+id/media_ponderata"
         android:layout_alignParentStart="true"
         android:id="@+id/space_3"
-        />
+        android:layout_marginBottom="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -98,7 +101,8 @@
         android:id="@+id/next_exam"
         android:text="Prossimo esame: "
         android:layout_below="@+id/space_3"
-        android:layout_alignStart="@+id/media_ponderata" />
+        android:layout_alignStart="@+id/media_ponderata"
+        android:layout_marginBottom="5dp" />
 
 
 </RelativeLayout><!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/layout/activity_main.xml -->

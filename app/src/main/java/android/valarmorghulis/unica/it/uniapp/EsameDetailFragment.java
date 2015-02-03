@@ -69,8 +69,6 @@ public class EsameDetailFragment extends Fragment{
                     break;
             }
 
-
-
             ((TextView) rootView.findViewById(R.id.exam_name_textView)).setText(mItem.completeNameExam);
             ((TextView) rootView.findViewById(R.id.prof_name_textView)).setText(mItem.nameProf);
 

@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
@@ -50,6 +52,12 @@ public class MainActivity extends Activity {
                 goStatistiche();
             }
         });
+
+        TextView mediaArit = (TextView) findViewById(R.id.media_aritmetica);
+        mediaArit.setText(mediaArit.getText() + " " + String.format("%.2f", DummyContent.mediaAritmetica));
+
+        TextView mediaPond = (TextView) findViewById(R.id.media_ponderata);
+        mediaPond.setText(mediaPond.getText() + " " + String.format("%.2f", DummyContent.mediaPonderata));
     }
 
 

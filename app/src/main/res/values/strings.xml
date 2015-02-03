@@ -33,9 +33,9 @@
     <color name="dark_blue">#558ED5</color>
     <color name="purple">#DDA0DD</color>
 
-    <string name="title_activity_general_stat">GeneralStat</string>
-    <string name="title_activity_andamento_voti">AndamentoVoti</string>
-    <string name="title_activity_andamento_media_aritmetica">AndamentoMediaAritmetica</string>
-    <string name="title_activity_andamento_media_ponderata">AndamentoMediaPonderata</string>
+    <string name="title_activity_general_stat">Statistiche generali</string>
+    <string name="title_activity_andamento_voti">Andamento Voti</string>
+    <string name="title_activity_andamento_media_aritmetica">Andamento Media Aritmetica</string>
+    <string name="title_activity_andamento_media_ponderata">Andamento Media Ponderata</string>
 
 </resources>

@@ -6,11 +6,73 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="android.valarmorghulis.unica.it.uniapp.statistiche.GeneralStat">
+    tools:context="android.valarmorghulis.unica.it.uniapp.statistiche.GeneralStat"
+    android:background="@color/blue"
+    android:gravity="center"
+    >
 
     <TextView
-        android:text="@string/general"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crediti conseguiti:"
+        android:id="@+id/crediti_conseguiti_textview"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media aritmetica:"
+        android:id="@+id/media_aritmetica_textview"
+        android:layout_below="@id/crediti_conseguiti_textview"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media ponderata:"
+        android:id="@+id/media_ponderata_textview"
+        android:layout_below="@id/media_aritmetica_textview"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voto di laurea di partenza:"
+        android:id="@+id/voto_partenza_textview"
+        android:layout_below="@id/media_ponderata_textview"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esami svolti:"
+        android:id="@+id/esami_svolti_textview"
+        android:layout_below="@id/voto_partenza_textview"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esami da fare:"
+        android:id="@+id/esami_da_fare_textview"
+        android:layout_below="@id/esami_svolti_textview"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="15dp" />
 
 </RelativeLayout>
