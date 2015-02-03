@@ -13,4 +13,3 @@ Things to do:
 	- fix bug with "idoneità" and grades with "lode"
 - Piano di studi: set calendar
 - Stima: to do
-- Statistiche: to do
