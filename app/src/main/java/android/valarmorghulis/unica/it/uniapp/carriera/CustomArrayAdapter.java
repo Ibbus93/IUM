@@ -1,10 +1,11 @@
-package android.valarmorghulis.unica.it.uniapp;
+package android.valarmorghulis.unica.it.uniapp.carriera;
 
 /**
  * Created by Samsung on 31/01/2015.
  */
 import android.content.Context;
 import android.graphics.Typeface;
+import android.valarmorghulis.unica.it.uniapp.R;
 import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
 import android.view.LayoutInflater;
 import android.view.View;

@@ -1,12 +1,10 @@
-package android.valarmorghulis.unica.it.uniapp;
+package android.valarmorghulis.unica.it.uniapp.carriera;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-import android.util.Log;
-import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
+import android.valarmorghulis.unica.it.uniapp.R;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 
 /**

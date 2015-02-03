@@ -8,7 +8,7 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context="android.valarmorghulis.unica.it.uniapp.EsameListActivity">
+    tools:context="android.valarmorghulis.unica.it.uniapp.carriera.EsameListActivity">
 
     <!--
     This layout is a two-pane layout for the Esami
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/esame_list"
-        android:name="android.valarmorghulis.unica.it.uniapp.EsameListFragment"
+        android:name="android.valarmorghulis.unica.it.uniapp.carriera.EsameListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"

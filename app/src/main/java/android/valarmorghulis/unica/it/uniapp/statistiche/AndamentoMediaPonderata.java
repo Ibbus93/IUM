@@ -23,8 +23,8 @@ public class AndamentoMediaPonderata extends Activity {
         setContentView(R.layout.activity_andamento_media_ponderata);
 
 
-        DataPoint[] points = new DataPoint[DummyContent.esamiPassati];
-        final String[] labels = new String[DummyContent.esamiPassati];
+        DataPoint[] points = new DataPoint[DummyContent.esamiPassati + 1];
+        final String[] labels = new String[DummyContent.esamiPassati + 1];
         double aux;
         int accPond = 0;
         int accCred = 0;
@@ -36,8 +36,10 @@ public class AndamentoMediaPonderata extends Activity {
                 accPond += DummyContent.ITEMS.get(j).grade * DummyContent.ITEMS.get(j).crediti;
                 accCred += DummyContent.ITEMS.get(j).crediti;
                 aux = (double) accPond / accCred;
-                points[i] = new DataPoint(i, aux);
-                labels[i] = DummyContent.ITEMS.get(j).nameExam;
+                if(i == 0)
+                    points[i] = new DataPoint(i, aux);
+                points[(i+1)] = new DataPoint((i+1), aux);
+                labels[(i+1)] = DummyContent.ITEMS.get(j).nameExam;
                 i++;
             }
         }

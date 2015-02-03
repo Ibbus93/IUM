@@ -50,14 +50,14 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".EsameListActivity"
+            android:name=".carriera.EsameListActivity"
             android:label="@string/title_activity_carriera"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".EsameDetailActivity"
+            android:name=".carriera.EsameDetailActivity"
             android:label="@string/title_esame_detail"
-            android:parentActivityName=".EsameListActivity"
+            android:parentActivityName=".carriera.EsameListActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

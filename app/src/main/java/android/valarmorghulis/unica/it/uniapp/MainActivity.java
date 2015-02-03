@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.valarmorghulis.unica.it.uniapp.carriera.EsameListActivity;
 import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -82,7 +83,6 @@ public class MainActivity extends Activity {
 
     private void goCarriera(){
         Log.d(TAG_LOG, "Carriera clicked");
-        //final Intent carrieraIntent = new Intent(this, Carriera.class);
         final Intent carrieraIntent = new Intent(this, EsameListActivity.class);
         startActivity(carrieraIntent);
     }

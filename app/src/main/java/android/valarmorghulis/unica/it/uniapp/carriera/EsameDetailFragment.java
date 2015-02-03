@@ -1,7 +1,8 @@
-package android.valarmorghulis.unica.it.uniapp;
+package android.valarmorghulis.unica.it.uniapp.carriera;
 
 import android.os.Bundle;
 import android.app.Fragment;
+import android.valarmorghulis.unica.it.uniapp.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

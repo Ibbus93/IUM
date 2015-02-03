@@ -1,10 +1,9 @@
-package android.valarmorghulis.unica.it.uniapp;
+package android.valarmorghulis.unica.it.uniapp.carriera;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-
-
+import android.valarmorghulis.unica.it.uniapp.R;
 
 
 /**

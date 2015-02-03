@@ -1,10 +1,9 @@
-package android.valarmorghulis.unica.it.uniapp;
+package android.valarmorghulis.unica.it.uniapp.carriera;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.app.ListFragment;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
