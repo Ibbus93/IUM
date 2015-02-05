@@ -313,7 +313,7 @@ public class CalendarChooser extends FrameLayout {
             // We get the selected date
             mCurrentDate = ((DayTextView) view).getItemDate();
             //Log.i(TAG_LOG, "SELECTED " + mCurrentDate.getTime() + ", OR " + mCurrentDate.get(Calendar.DAY_OF_YEAR));
-            if(DummyContent.isPresent(mCurrentDate.get(Calendar.DAY_OF_YEAR))){
+            if(DummyContent.isPresent(mCurrentDate.get(Calendar.DAY_OF_YEAR), mCurrentDate.get(Calendar.YEAR))){
                 Toast.makeText(
                         getContext(),
                         "Esame di " + ITEMS.get(DummyContent.selected).completeNameExam + " " + DummyContent.isPassed(ITEMS.get(DummyContent.selected)) +
@@ -577,39 +577,32 @@ public class CalendarChooser extends FrameLayout {
                     // The current day is the selected one. It has precedence over the
                     // today
                     dayTextView.setSelectedDay(true);
-                } else if (today == currentDayInYear && todayYear == currentYear) {
+                } else if (currentMonthYear != selectedMonth) {
+                    dayTextView.setOtherMonth(true);
+                }else if (today == currentDayInYear && todayYear == currentYear) {
                    //System.out.println("Case 2");
                     // In this case it's today
                    //System.out.println("\n\nToday! Giorno: " + currentDayInYear + "/"+currentMonthYear+"/"+currentYear+"\n\n");
                     dayTextView.setToday(true);
-                } else if(DummyContent.isPresent(currentDayInYear) &&
+                } else if(DummyContent.isPresent(currentDayInYear, currentYear) && // se il giorno dell'anno equivale
                             ITEMS.get(DummyContent.selected).dateExam.get(Calendar.DAY_OF_YEAR) == currentDayInYear &&
-                            ITEMS.get(DummyContent.selected).aa == currentYear
+                            ITEMS.get(DummyContent.selected).aa == currentYear &&
+                            ITEMS.get(DummyContent.selected).getDateString() != null
                        ) {
-                   //System.out.println("Case 4");
-//                   System.out.println("Sono qui, devi dare " + ITEMS.get(DummyContent.selected).completeNameExam);
-//                   System.out.println("Anno: " + ITEMS.get(DummyContent.selected).aa + ", todayYear: "+ todayYear + ", currentYear :" + currentYear);
+                   System.out.println("Sono qui, devi dare " + ITEMS.get(DummyContent.selected).completeNameExam);
+                   System.out.println("Anno: " + ITEMS.get(DummyContent.selected).aa + ", todayYear: "+ todayYear + ", currentYear :" + currentYear);
                     // There is an exam to pass!
                    switch (ITEMS.get(DummyContent.selected).year) {
                        case 1: dayTextView.setFirstYear(true);
-//                           System.out.println("YEAR 1");
                            break;
                        case 2: dayTextView.setSecondYear(true);
-//                           System.out.println("YEAR 2");
                            break;
                        case 3: dayTextView.setThirdYear(true);
-//                           System.out.println("YEAR 3");
                            break;
                    }
-                }else if (currentMonthYear == selectedMonth) {
-                   //System.out.println("Case 3");
+                }else {
                    // The day os a day of the selected month
                    dayTextView.setThisMonth(true);
-               } else {
-                       // The day is not of the selected month. It's a day of the previous
-                       // or successive month
-                   //System.out.println("Case 5");
-                   dayTextView.setOtherMonth(true);
                 }
                 // We manage events
                 dayTextView.setClickable(true);

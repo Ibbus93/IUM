@@ -37,28 +37,28 @@ public class DummyContent {
     static {
         // Add items.
         // ANNO 1 SEMESTRE 1
-        addItem(new DummyItem("1", "Programmazione 1", "PR1", "Riccardo Scateni", 1, 1, 2013, 29, 12, 1, false));
-        addItem(new DummyItem("2", "Fondamenti di Informatica", "FDI", "Barbara Pes", 2, 1, 2013, 29, 6, 1, false));
-        addItem(new DummyItem("3", "Matematica Discreta", "MD", "Michela Zedda", 3, 1, 2013, 30, 9, 1, true));
-        addItem(new DummyItem("4", "Inglese", "ENG", "No prof", 4, 1, 2013, 10, 3, 1, false));
+        addItem(new DummyItem("1", "Programmazione 1", "PR1", "Riccardo Scateni", 15, 2, 2013, 29, 12, 1, false));
+        addItem(new DummyItem("2", "Fondamenti di Informatica", "FDI", "Barbara Pes", 16, 1, 2013, 29, 6, 1, false));
+        addItem(new DummyItem("3", "Matematica Discreta", "MD", "Michela Zedda", 18, 1, 2013, 30, 9, 1, true));
+        addItem(new DummyItem("4", "Inglese", "ENG", "No prof", 1, 10, 2013, 10, 3, 1, false));
 
         // ANNO 1 SEMESTRE 2
-        addItem(new DummyItem("5", "Algoritmi e Strutture Dati", "AST", "Cecilia Di Ruberto", 1, 6, 2013, 28, 9, 1, false));
-        addItem(new DummyItem("6", "Calcolo Differenziale e Integrale", "CDI", "Vasilis Todor", 2, 6, 2013, 23, 9, 1, false));
-        addItem(new DummyItem("7", "Arichitettura degli Elaboratori", "ARE", "Fabrizio Mulas", 3, 6, 2013, 24, 6, 1, false));
-        addItem(new DummyItem("8", "Fisica e Metodo Scientifico", "FIS", "Alessandro Riggio", 4, 6, 2013, 24, 6, 1, false));
+        addItem(new DummyItem("5", "Algoritmi e Strutture Dati", "AST", "Cecilia Di Ruberto", 27, 6, 2013, 28, 9, 1, false));
+        addItem(new DummyItem("6", "Calcolo Differenziale e Integrale", "CDI", "Vasilis Todor", 29, 6, 2013, 23, 9, 1, false));
+        addItem(new DummyItem("7", "Arichitettura degli Elaboratori", "ARE", "Fabrizio Mulas", 22, 7, 2014, 24, 6, 1, false));
+        addItem(new DummyItem("8", "Fisica e Metodo Scientifico", "FIS", "Alessandro Riggio", 22, 7, 2013, 24, 6, 1, false));
 
         // ANNO 2 SEMESTRE 1
-        addItem(new DummyItem("9", "Sistemi Operativi 1", "SO1", "Salvatore Carta", 1, 1, 2014, 22, 12, 2, false));
-        addItem(new DummyItem("10", "Automi e Linguaggi Formali", "ALF", "Massimo Bartoletti", 2, 1, 2014, 23, 6, 2, false));
-        addItem(new DummyItem("11", "Calcolo Scientifico e Metodi Numerici", "CSMN", "Marco Gaviano", 3, 1, 2014, 22, 6, 2, false));
-        addItem(new DummyItem("12", "Economia e Diritto", "EDI", "Zedda Botta", 4, 1, 2014, 23, 6, 2, false));
+        addItem(new DummyItem("9", "Sistemi Operativi 1", "SO1", "Salvatore Carta", 28, 1, 2014, 22, 12, 2, false));
+        addItem(new DummyItem("10", "Automi e Linguaggi Formali", "ALF", "Massimo Bartoletti", 24, 2, 2014, 23, 6, 2, false));
+        addItem(new DummyItem("11", "Calcolo Scientifico e Metodi Numerici", "CSMN", "Marco Gaviano", 16, 7, 2014, 22, 6, 2, false));
+        addItem(new DummyItem("12", "Economia e Diritto", "EDI", "Zedda Botta", 22, 1, 2014, 23, 6, 2, false));
 
         // ANNO 2 SEMESTRE 2
-        addItem(new DummyItem("13", "Reti di Calcolatori", "RC", "Gianni Fenu", 1, 6, 2014, 27, 9, 2, false));
+        addItem(new DummyItem("13", "Reti di Calcolatori", "RC", "Gianni Fenu", 2, 7, 2014, 27, 9, 2, false));
         addItem(new DummyItem("14", "Programmazione 2", "PR2", "Maurizio Atzori", 0, 0, 0, 0, 9, 2, false));
-        addItem(new DummyItem("15", "Statistica", "STI", "Massimo Di Francesco", 2, 6, 2014, 30, 6, 2, true));
-        addItem(new DummyItem("16", "Amministrazione di Sistema", "AMM", "Davide Spano", 3, 6, 2014, 0, 6, 2, false));
+        addItem(new DummyItem("15", "Statistica", "STI", "Massimo Di Francesco", 6, 6, 2014, 30, 6, 2, true));
+        addItem(new DummyItem("16", "Amministrazione di Sistema", "AMM", "Davide Spano", 15, 1, 2015, 10, 6, 2, false));
 
         // ANNO 3 SEMESTRE 1
         addItem(new DummyItem("17", "Linguaggi di Programmazione", "LIP", "G.M.Pinna", 24, 2, 2015, 26, 9, 3, false));
@@ -86,14 +86,14 @@ public class DummyContent {
         calcVotoPartenza();
     }
 
-    public static boolean isPresent(int currentDayInYear){
+    public static boolean isPresent(int currentDayInYear, int year){
         boolean result = false;
 
         for(int i=0;i<ITEMS.size();i++){
-            if(ITEMS.get(i).dateExam.get(Calendar.DAY_OF_YEAR) == currentDayInYear) {
+            if(ITEMS.get(i).dateExam.get(Calendar.DAY_OF_YEAR) == currentDayInYear && ITEMS.get(i).aa == year) {
                 result = true;
                 selected = i;
-                System.out.println("E' presente il giorno " + ITEMS.get(i).getDateString());
+                //System.out.println("E' presente il giorno " + ITEMS.get(i).getDateString());
             }
         }
         return result;
@@ -203,7 +203,10 @@ public class DummyContent {
         }
 
         public String getDateString(){
-            return gg + "/" + mm + "/" + aa;
+            if( gg != 0 && mm != 0 && aa != 0)
+                return gg + "/" + mm + "/" + aa;
+            else
+                return null;
         }
 
         @Override
