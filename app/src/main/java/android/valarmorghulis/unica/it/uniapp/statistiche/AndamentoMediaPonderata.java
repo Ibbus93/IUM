@@ -1,5 +1,6 @@
 package android.valarmorghulis.unica.it.uniapp.statistiche;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
@@ -94,6 +95,8 @@ public class AndamentoMediaPonderata extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.andamento_media_ponderata, menu);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         return true;
     }
 

@@ -76,7 +76,7 @@ public class EsameDetailFragment extends Fragment{
 
             if(mItem.done > 0) {
                 ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame passato");
-                ((TextView) rootView.findViewById(R.id.label_in_data)).setText("In data: "+ mItem.dateExam);
+                ((TextView) rootView.findViewById(R.id.label_in_data)).setText("In data: "+ mItem.getDateString());
             } else {
                 if (mItem.done < 0) {
                     ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame da dare");

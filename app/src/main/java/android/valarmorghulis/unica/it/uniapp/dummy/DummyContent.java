@@ -51,7 +51,7 @@ public class DummyContent {
         // ANNO 2 SEMESTRE 1
         addItem(new DummyItem("9", "Sistemi Operativi 1", "SO1", "Salvatore Carta", 28, 1, 2014, 22, 12, 2, false));
         addItem(new DummyItem("10", "Automi e Linguaggi Formali", "ALF", "Massimo Bartoletti", 24, 2, 2014, 23, 6, 2, false));
-        addItem(new DummyItem("11", "Calcolo Scientifico e Metodi Numerici", "CSMN", "Marco Gaviano", 16, 7, 2014, 22, 6, 2, false));
+        addItem(new DummyItem("11", "Calcolo Scientifico", "CSMN", "Marco Gaviano", 16, 7, 2014, 22, 6, 2, false));
         addItem(new DummyItem("12", "Economia e Diritto", "EDI", "Zedda Botta", 22, 1, 2014, 23, 6, 2, false));
 
         // ANNO 2 SEMESTRE 2
@@ -64,7 +64,7 @@ public class DummyContent {
         addItem(new DummyItem("17", "Linguaggi di Programmazione", "LIP", "G.M.Pinna", 24, 2, 2015, 26, 9, 3, false));
         addItem(new DummyItem("18", "Basi di Dati 1", "BD1", "Nicoletta Dessì", 25, 2, 2015, 0, 9, 3, false));
         addItem(new DummyItem("19", "Interazione Uomo Macchima", "IUM", "Davide Spano", 0, 0, 0, 0, 6, 3, false));
-        addItem(new DummyItem("20", "Progettazione di Sistemi Informatici", "PSI", "Gianni Fenu", 0, 0, 0, 0, 6, 3, false));
+        addItem(new DummyItem("20", "Progettazione Sistemi Informatici", "PSI", "Gianni Fenu", 0, 0, 0, 0, 6, 3, false));
 
         // ANNO 3 SEMESTRE 2
         addItem(new DummyItem("21", "Ingegneria del Software", "ISW", "Andrea Casanova", 0, 0, 0, 0, 9, 3, false));

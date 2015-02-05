@@ -1,9 +1,14 @@
 package android.valarmorghulis.unica.it.uniapp.carriera;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
+import android.valarmorghulis.unica.it.uniapp.PianoStudi;
 import android.valarmorghulis.unica.it.uniapp.R;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
 /**
@@ -29,6 +34,7 @@ public class EsameListActivity extends Activity
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
      * device.
      */
+    public static final String TAG_LOG = EsameListActivity.class.getName();
     private boolean mTwoPane;
 
     @Override
@@ -78,5 +84,27 @@ public class EsameListActivity extends Activity
             detailIntent.putExtra(EsameDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.esame_list, menu);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if(item.getItemId() == R.id.add_exam) {
+            addExam();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void addExam() {
+        Log.d(TAG_LOG, "Aggiungi esame");
+        final Intent addExamIntent = new Intent(this, AddExam.class);
+        startActivity(addExamIntent);
     }
 }

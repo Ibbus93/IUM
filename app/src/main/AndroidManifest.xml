@@ -29,24 +29,40 @@
             android:name=".Stima"
             android:configChanges="orientation"
             android:label="@string/title_activity_stima"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.MainActivity" />
         </activity>
         <activity
             android:name=".PianoStudi"
             android:configChanges="orientation"
             android:label="@string/piano_studi"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.MainActivity" />
         </activity>
         <activity
             android:name=".Statistiche"
             android:configChanges="orientation"
             android:label="@string/title_activity_statistiche"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.MainActivity" />
         </activity>
         <activity
             android:name=".carriera.EsameListActivity"
             android:label="@string/title_activity_carriera"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.MainActivity" />
         </activity>
         <activity
             android:name=".carriera.EsameDetailActivity"
@@ -60,22 +76,56 @@
         <activity
             android:name=".statistiche.GeneralStat"
             android:label="@string/title_activity_general_stat"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".Statistiche"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.Statistiche" />
         </activity>
         <activity
             android:name=".statistiche.AndamentoVoti"
             android:label="@string/title_activity_andamento_voti"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".Statistiche"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.Statistiche" />
         </activity>
         <activity
             android:name=".statistiche.AndamentoMediaAritmetica"
             android:label="@string/title_activity_andamento_media_aritmetica"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".Statistiche"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.Statistiche" />
         </activity>
         <activity
             android:name=".statistiche.AndamentoMediaPonderata"
             android:label="@string/title_activity_andamento_media_ponderata"
+            android:parentActivityName=".Statistiche"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.Statistiche" />
+        </activity>
+        <activity
+            android:name=".carriera.AddExam"
+            android:label="@string/title_activity_add_exam"
+            android:parentActivityName=".carriera.EsameListActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.EsameListActivity" />
+        </activity>
+        <activity
+            android:name=".pianostudi.AddEvent"
+            android:label="@string/title_activity_add_event"
+            android:parentActivityName=".PianoStudi"
             android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.valarmorghulis.unica.it.uniapp.PianoStudi" />
         </activity>
     </application>
 

@@ -709,6 +709,8 @@
 
     <string name="statistiche">Statistiche</string>
     <string name="stima">Stima</string>
+    <string name="title_activity_add_event">Aggiungi Evento</string>
+    <string name="title_activity_add_exam">Aggiungi Esame</string>
     <string name="title_activity_andamento_media_aritmetica">Andamento Media Aritmetica</string>
     <string name="title_activity_andamento_media_ponderata">Andamento Media Ponderata</string>
     <string name="title_activity_andamento_voti">Andamento Voti</string>
@@ -725,8 +727,8 @@
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.Light">
+<!--  Customize your theme here. android:Theme.DeviceDefault.Light -->
     </style>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
     <eat-comment />

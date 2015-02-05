@@ -8,6 +8,6 @@ Things to do:
 
 - Carriera: 
 	- change colors
-	- add button "add exam" on action bar
-- Piano di studi: add button "add event"
+	- Edit "Add Exam"
+- Piano di studi: edit "Add Event"
 - Stima: to do

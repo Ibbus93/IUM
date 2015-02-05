@@ -43,12 +43,12 @@ public class CustomArrayAdapter extends ArrayAdapter<DummyContent.DummyItem> {
         if(values.get(position).grade > 0){
             //String vote = String.valueOf(values.get(position).vote);
             //grade.setText("Test passed with " + vote);
-            subtitle.setText("Passed");
+            subtitle.setText("Passato");
         }else {
-            if(values.get(position).dateExam == null)
-                subtitle.setText("Not passed");
+            if(values.get(position).getDateString() == null)
+                subtitle.setText("Da dare");
             else
-                subtitle.setText("Booked on " + values.get(position).dateExam);
+                subtitle.setText("Prenotato in data " + values.get(position).getDateString());
         }
 
         switch (values.get(position).year){
@@ -62,16 +62,6 @@ public class CustomArrayAdapter extends ArrayAdapter<DummyContent.DummyItem> {
                 imageView.setImageResource(R.drawable.year_3);
                 break;
         }
-
-
-        // Change the icon for Windows and iPhone
-
-      /*  if (s.startsWith("Windows7") || s.startsWith("iPhone")
-                || s.startsWith("Solaris")) {
-            imageView.setImageResource(R.drawable.no);
-        } else {
-            imageView.setImageResource(R.drawable.ok);
-        }*/
 
         return rowView;
     }

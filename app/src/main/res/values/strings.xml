@@ -15,7 +15,6 @@
     <string name="title_activity_piano_studi">PianoStudi</string>
     <string name="title_activity_statistiche">Statistiche</string>
     <string name="title_activity_calendar_chooser">Calendar Chooser</string>
-
     <string name="add_exam_date">Aggiungi data esame</string>
     <string name="title_esame_list">Esami</string>
     <string name="title_esame_detail">Esame Detail</string>
@@ -23,10 +22,11 @@
     <string name="andamento_voti">Andamento \nVoti</string>
     <string name="andamento_media_ponderata">Andamento \nmedia \nponderata</string>
     <string name="andamento_media_aritmetica">Andamento \nmedia \naritmetica</string>
-
     <string name="title_activity_general_stat">Statistiche generali</string>
     <string name="title_activity_andamento_voti">Andamento Voti</string>
     <string name="title_activity_andamento_media_aritmetica">Andamento Media Aritmetica</string>
     <string name="title_activity_andamento_media_ponderata">Andamento Media Ponderata</string>
+    <string name="title_activity_add_exam">Aggiungi Esame</string>
+    <string name="title_activity_add_event">Aggiungi Evento</string>
 
 </resources>

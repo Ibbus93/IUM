@@ -1,5 +1,6 @@
 package android.valarmorghulis.unica.it.uniapp.statistiche;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -88,6 +89,8 @@ public class AndamentoVoti extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.andamento_voti, menu);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         return true;
     }
 
