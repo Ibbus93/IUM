@@ -1,6 +1,7 @@
 package android.valarmorghulis.unica.it.uniapp.dummy;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +27,7 @@ public class DummyContent {
     public static double mediaAritmetica;
     public static double mediaPonderata;
     public static double votoPartenza;
+    public static int selected;
 
     /**
      * A map of sample (dummy) items, by ID.
@@ -35,37 +37,37 @@ public class DummyContent {
     static {
         // Add items.
         // ANNO 1 SEMESTRE 1
-        addItem(new DummyItem("1", "Programmazione 1", "PR1", "Riccardo Scateni", "01/01/2013", 29, 12, 1, false));
-        addItem(new DummyItem("2", "Fondamenti di Informatica", "FDI", "Barbara Pes", "02/01/2013", 29, 6, 1, false));
-        addItem(new DummyItem("3", "Matematica Discreta", "MD", "Michela Zedda", "03/01/2013", 30, 9, 1, true));
-        addItem(new DummyItem("4", "Inglese", "ENG", "No prof", "04/01/2013", 10, 3, 1, false));
+        addItem(new DummyItem("1", "Programmazione 1", "PR1", "Riccardo Scateni", 1, 1, 2013, 29, 12, 1, false));
+        addItem(new DummyItem("2", "Fondamenti di Informatica", "FDI", "Barbara Pes", 2, 1, 2013, 29, 6, 1, false));
+        addItem(new DummyItem("3", "Matematica Discreta", "MD", "Michela Zedda", 3, 1, 2013, 30, 9, 1, true));
+        addItem(new DummyItem("4", "Inglese", "ENG", "No prof", 4, 1, 2013, 10, 3, 1, false));
 
         // ANNO 1 SEMESTRE 2
-        addItem(new DummyItem("5", "Algoritmi e Strutture Dati", "AST", "Cecilia Di Ruberto", "01/06/2013", 28, 9, 1, false));
-        addItem(new DummyItem("6", "Calcolo Differenziale e Integrale", "CDI", "Vasilis Todor", "02/06/2013", 23, 9, 1, false));
-        addItem(new DummyItem("7", "Arichitettura degli Elaboratori", "ARE", "Fabrizio Mulas", "03/06/2013", 24, 6, 1, false));
-        addItem(new DummyItem("8", "Fisica e Metodo Scientifico", "FIS", "Alessandro Riggio", "04/06/2013", 24, 6, 1, false));
+        addItem(new DummyItem("5", "Algoritmi e Strutture Dati", "AST", "Cecilia Di Ruberto", 1, 6, 2013, 28, 9, 1, false));
+        addItem(new DummyItem("6", "Calcolo Differenziale e Integrale", "CDI", "Vasilis Todor", 2, 6, 2013, 23, 9, 1, false));
+        addItem(new DummyItem("7", "Arichitettura degli Elaboratori", "ARE", "Fabrizio Mulas", 3, 6, 2013, 24, 6, 1, false));
+        addItem(new DummyItem("8", "Fisica e Metodo Scientifico", "FIS", "Alessandro Riggio", 4, 6, 2013, 24, 6, 1, false));
 
         // ANNO 2 SEMESTRE 1
-        addItem(new DummyItem("9", "Sistemi Operativi 1", "SO1", "Salvatore Carta", "01/01/2014", 22, 12, 2, false));
-        addItem(new DummyItem("10", "Automi e Linguaggi Formali", "ALF", "Massimo Bartoletti", "02/01/2014", 23, 6, 2, false));
-        addItem(new DummyItem("11", "Calcolo Scientifico e Metodi Numerici", "CSMN", "Marco Gaviano", "03/01/2014", 22, 6, 2, false));
-        addItem(new DummyItem("12", "Economia e Diritto", "EDI", "Zedda Botta", "04/01/2014", 23, 6, 2, false));
+        addItem(new DummyItem("9", "Sistemi Operativi 1", "SO1", "Salvatore Carta", 1, 1, 2014, 22, 12, 2, false));
+        addItem(new DummyItem("10", "Automi e Linguaggi Formali", "ALF", "Massimo Bartoletti", 2, 1, 2014, 23, 6, 2, false));
+        addItem(new DummyItem("11", "Calcolo Scientifico e Metodi Numerici", "CSMN", "Marco Gaviano", 3, 1, 2014, 22, 6, 2, false));
+        addItem(new DummyItem("12", "Economia e Diritto", "EDI", "Zedda Botta", 4, 1, 2014, 23, 6, 2, false));
 
         // ANNO 2 SEMESTRE 2
-        addItem(new DummyItem("13", "Reti di Calcolatori", "RC", "Gianni Fenu", "01/06/2014", 27, 9, 2, false));
-        addItem(new DummyItem("14", "Programmazione 2", "PR2", "Maurizio Atzori", null, 0, 9, 2, false));
-        addItem(new DummyItem("15", "Statistica", "STI", "Massimo Di Francesco", "02/06/2014", 30, 6, 2, true));
-        addItem(new DummyItem("16", "Amministrazione di Sistema", "AMM", "Davide Spano", "03/06/2014", 0, 6, 2, false));
+        addItem(new DummyItem("13", "Reti di Calcolatori", "RC", "Gianni Fenu", 1, 6, 2014, 27, 9, 2, false));
+        addItem(new DummyItem("14", "Programmazione 2", "PR2", "Maurizio Atzori", 0, 0, 0, 0, 9, 2, false));
+        addItem(new DummyItem("15", "Statistica", "STI", "Massimo Di Francesco", 2, 6, 2014, 30, 6, 2, true));
+        addItem(new DummyItem("16", "Amministrazione di Sistema", "AMM", "Davide Spano", 3, 6, 2014, 0, 6, 2, false));
 
         // ANNO 3 SEMESTRE 1
-        addItem(new DummyItem("17", "Linguaggi di Programmazione", "LIP", "G.M.Pinna", "24/02/2015", 26, 9, 3, false));
-        addItem(new DummyItem("18", "Basi di Dati 1", "BD1", "Nicoletta Dessì", "25/02/2015", 0, 9, 3, false));
-        addItem(new DummyItem("19", "Interazione Uomo Macchima", "IUM", "Davide Spano", null, 0, 6, 3, false));
-        addItem(new DummyItem("20", "Progettazione di Sistemi Informatici", "PSI", "Gianni Fenu", null, 0, 6, 3, false));
+        addItem(new DummyItem("17", "Linguaggi di Programmazione", "LIP", "G.M.Pinna", 24, 2, 2015, 26, 9, 3, false));
+        addItem(new DummyItem("18", "Basi di Dati 1", "BD1", "Nicoletta Dessì", 25, 2, 2015, 0, 9, 3, false));
+        addItem(new DummyItem("19", "Interazione Uomo Macchima", "IUM", "Davide Spano", 0, 0, 0, 0, 6, 3, false));
+        addItem(new DummyItem("20", "Progettazione di Sistemi Informatici", "PSI", "Gianni Fenu", 0, 0, 0, 0, 6, 3, false));
 
         // ANNO 3 SEMESTRE 2
-        addItem(new DummyItem("21", "Ingegneria del Software", "ISW", "Andrea Casanova", null, 0, 9, 3, false));
+        addItem(new DummyItem("21", "Ingegneria del Software", "ISW", "Andrea Casanova", 0, 0, 0, 0, 9, 3, false));
     }
 
 
@@ -82,6 +84,19 @@ public class DummyContent {
         }
         calcMedie();
         calcVotoPartenza();
+    }
+
+    public static boolean isPresent(int currentDayInYear){
+        boolean result = false;
+
+        for(int i=0;i<ITEMS.size();i++){
+            if(ITEMS.get(i).dateExam.get(Calendar.DAY_OF_YEAR) == currentDayInYear) {
+                result = true;
+                selected = i;
+                System.out.println("E' presente il giorno " + ITEMS.get(i).getDateString());
+            }
+        }
+        return result;
     }
 
     private static void calcVotoPartenza() {
@@ -108,6 +123,14 @@ public class DummyContent {
             esamiPassatiConIdo++;
         }
     }
+
+    public static String isPassed(DummyItem item){
+        if(item.grade >= 10) // 10 idoneità
+            return "passato"; //exam passed
+        else
+            return "prenotato";  //exam booked
+
+    }
     /**
      * A dummy item representing a piece of nameExam.
      */
@@ -116,7 +139,10 @@ public class DummyContent {
         public String completeNameExam;
         public String nameExam;
         public String nameProf;
-        public String dateExam;
+        public Calendar dateExam;
+        public int gg;
+        public int mm;
+        public int aa;
         public int grade;
         public int crediti;
         public int done;
@@ -124,12 +150,45 @@ public class DummyContent {
         public boolean lode;
 
         public DummyItem(String id, String completeNameExam, String nameExam, String nameProf,
-                         String dateExam, int grade, int crediti, int year, boolean lode) {
+                         int gg, int mm, int aa, int grade, int crediti, int year, boolean lode) {
             this.id = id;
             this.completeNameExam = completeNameExam;
             this.nameExam = nameExam;
             this.nameProf = nameProf;
-            this.dateExam = dateExam;
+
+            // Init date Exam
+            this.dateExam = Calendar.getInstance();
+
+            switch(mm) {
+                case 1: dateExam.set(aa, Calendar.JANUARY, gg);
+                    break;
+                case 2: dateExam.set(aa, Calendar.FEBRUARY, gg);
+                    break;
+                case 3: dateExam.set(aa, Calendar.MARCH, gg);
+                    break;
+                case 4: dateExam.set(aa, Calendar.APRIL, gg);
+                    break;
+                case 5: dateExam.set(aa, Calendar.MAY, gg);
+                    break;
+                case 6: dateExam.set(aa, Calendar.JUNE, gg);
+                    break;
+                case 7: dateExam.set(aa, Calendar.JULY, gg);
+                    break;
+                case 8: dateExam.set(aa, Calendar.AUGUST, gg);
+                    break;
+                case 9: dateExam.set(aa, Calendar.SEPTEMBER, gg);
+                    break;
+                case 10: dateExam.set(aa, Calendar.OCTOBER, gg);
+                    break;
+                case 11: dateExam.set(aa, Calendar.NOVEMBER, gg);
+                    break;
+                case 12: dateExam.set(aa, Calendar.DECEMBER, gg);
+                    break;
+            }
+
+            this.aa = aa;
+            this.mm = mm;
+            this.gg = gg;
             this.grade = grade;
             this.crediti = crediti;
             this.year = year;
@@ -141,6 +200,10 @@ public class DummyContent {
                 this.done = 0;  //exam booked
             else
                 this.done = -1; //exam not still done / booked
+        }
+
+        public String getDateString(){
+            return gg + "/" + mm + "/" + aa;
         }
 
         @Override

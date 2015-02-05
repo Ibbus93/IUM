@@ -78,19 +78,54 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/colors.xml -->
     <eat-comment />
 
-    <color name="blue">#0066FF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="button_exam_1_color">@color/red_exam</color>
+    <color name="button_exam_2_color">@color/orange_exam</color>
+    <color name="button_exam_3_color">@color/dark_blue_exam</color>
+    <color name="button_focused_color">@color/light_grey</color>
+    <color name="button_not_pressed_color">@color/grey</color>
+    <color name="button_pressed_color">@color/dark_grey</color>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <color name="calendar_other_month_bg_color">@color/dark_grey</color>
+    <color name="calendar_selected_bg_color">@color/green</color>
+    <color name="calendar_this_month_bg_color">@color/light_grey</color>
+    <color name="calendar_today_bg_color">@color/light_red</color>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
     <color name="dark_blue">#558ED5</color>
-    <color name="green">#99FF99</color>
+    <color name="dark_blue_exam">#558ED5</color>
+    <color name="dark_grey">#555555</color>
+    <color name="error_message_color">@color/red</color>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <color name="exam_1_year_bg_color">@color/red_exam</color>
+    <color name="exam_2_year_bg_color">@color/orange_exam</color>
+    <color name="exam_3_year_bg_color">@color/dark_blue_exam</color>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="green">#00FF00</color>
+    <color name="grey">#BBBBBB</color>
     <color name="light_blue">#D4FFEB</color>
+    <color name="light_green">#99FF99</color>
+    <color name="light_grey">#EEEEEE</color>
+    <color name="light_red">#EEAAAA</color>
     <color name="light_yellow">#FFE86E</color>
     <color name="orange">#FFC000</color>
+    <color name="orange_exam">#FFC000</color>
     <color name="pink">#FFCCFF</color>
     <color name="purple">#DDA0DD</color>
     <color name="red">#FF4D4D</color>
-    <color name="white">#FFF</color>
+    <color name="red_exam">#FF4D4D</color>
+    <color name="white">#FFFFFF</color>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
@@ -518,6 +553,20 @@
         -->
         <attr name="android:focusable" />
     </declare-styleable>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <declare-styleable name="calendar_day">
+        <attr name="state_other_month" format="boolean" />
+        <attr name="state_this_month" format="boolean" />
+        <attr name="state_today" format="boolean" />
+        <attr name="state_day_selected" format="boolean" />
+        <attr name="exam_1_to_show" format="boolean" />
+        <attr name="exam_2_to_show" format="boolean" />
+        <attr name="exam_3_to_show" format="boolean" />
+    </declare-styleable>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <eat-comment />
 
     <dimen name="abc_action_bar_default_height">48dip</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding">8dip</dimen>
@@ -541,7 +590,17 @@
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_corners_width">8dp</dimen>
+    <dimen name="button_margin_bottom">25dp</dimen>
+    <dimen name="button_menu_padding">15dp</dimen>
     <dimen name="button_menu_size">140dp</dimen>
+    <dimen name="button_stroke_width">2px</dimen>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <dimen name="calendar_height">250dp</dimen>
+    <dimen name="calendar_month_text_size">25sp</dimen>
+    <dimen name="calendar_width">250dp</dimen>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
@@ -552,10 +611,32 @@
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/dimens.xml -->
     <eat-comment />
 
+    <dimen name="edittext_text_size">18sp</dimen>
+    <dimen name="margin_legenda">10dp</dimen>
+    <dimen name="margin_textview_layout">2dp</dimen>
     <dimen name="menu_space_under_buttons">40px</dimen>
     <dimen name="menu_space_value">25px</dimen>
     <dimen name="splash_size">250dp</dimen>
     <dimen name="text_detail_fragment">30px</dimen>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <drawable name="button_exam_1_color">@color/red_exam</drawable>
+    <drawable name="button_exam_2_color">@color/orange_exam</drawable>
+    <drawable name="button_exam_3_color">@color/dark_blue_exam</drawable>
+    <drawable name="button_focused_drawable">@color/button_focused_color</drawable>
+    <drawable name="button_not_pressed_drawable">@color/button_not_pressed_color</drawable>
+    <drawable name="button_pressed_drawable">@color/button_pressed_color</drawable>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <drawable name="calendar_other_month_bg_color">@color/dark_grey</drawable>
+    <drawable name="calendar_selected_bg_color">@color/green</drawable>
+    <drawable name="calendar_this_month_bg_color">@color/light_grey</drawable>
+    <drawable name="calendar_today_bg_color">@color/light_red</drawable>
+    <drawable name="exam_1_year_bg_color">@color/red_exam</drawable>
+    <drawable name="exam_2_year_bg_color">@color/orange_exam</drawable>
+    <drawable name="exam_3_year_bg_color">@color/dark_blue_exam</drawable>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />
 
@@ -590,15 +671,48 @@
     <string name="andamento_media_ponderata">Andamento \nmedia \nponderata</string>
     <string name="andamento_voti">Andamento \nVoti</string>
     <string name="app_name">UniApp</string>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <string name="calendar_dialog_title">Select the date</string>
+    <string name="calendar_no_label">Cancel</string>
+    <string name="calendar_yes_label">Confirm</string>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
     <string name="carriera">Carriera</string>
     <string name="general">Generali</string>
     <string name="hello_world">Hello world!</string>
     <string name="piano_studi">Piano di studi</string>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/placeholders.xml -->
+    <eat-comment />
+
+    <string name="placeholder_birth_date">-</string>
+    <string name="placeholder_data_question">How do you feel in Love?</string>
+    <string name="placeholder_health_vote">Health: 2</string>
+    <string name="placeholder_list_item_date">Date: 10 October 2013</string>
+    <string name="placeholder_list_item_title">List Item Title</string>
+    <string name="placeholder_local_data">Show local data</string>
+    <string name="placeholder_love_vote">Love : 5</string>
+    <string name="placeholder_luck_vote">Luck : 3</string>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <string name="placeholder_month_name">December</string>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/placeholders.xml -->
+    <eat-comment />
+
+    <string name="placeholder_remote_data">Show remote data</string>
+    <string name="placeholder_work_vote">Work : 4</string>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
     <string name="statistiche">Statistiche</string>
     <string name="stima">Stima</string>
     <string name="title_activity_andamento_media_aritmetica">Andamento Media Aritmetica</string>
     <string name="title_activity_andamento_media_ponderata">Andamento Media Ponderata</string>
     <string name="title_activity_andamento_voti">Andamento Voti</string>
+    <string name="title_activity_calendar_chooser">Calendar Chooser</string>
     <string name="title_activity_carriera">Carriera</string>
     <string name="title_activity_first_access">FirstAccessActivity</string>
     <string name="title_activity_general_stat">Statistiche generali</string>
@@ -613,6 +727,12 @@
 
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+    </style>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
+    <eat-comment />
+
+    <style name="CalendarStyle">
+        <item name="android:background">@color/light_grey</item>
     </style>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment />

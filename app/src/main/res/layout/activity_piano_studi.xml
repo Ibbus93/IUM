@@ -6,9 +6,146 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@color/red"
+    android:background="@color/white"
     tools:context="android.valarmorghulis.unica.it.uniapp.PianoStudi"
     android:id="@+id/cal"
     >
+
+        <android.valarmorghulis.unica.it.uniapp.widget.CalendarChooser
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/calendar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Legenda: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/legenda_textview"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/margin_legenda"
+            android:layout_below="@+id/calendar"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/legenda_primo_anno"
+            android:layout_marginBottom="@dimen/margin_legenda"
+            android:layout_below="@+id/legenda_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/exam_1_year_bg_color"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_textview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esame del primo anno"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/legenda_secondo_anno"
+            android:layout_marginBottom="@dimen/margin_legenda"
+            android:layout_below="@+id/legenda_primo_anno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/exam_2_year_bg_color"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_textview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esame del secondo anno"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/legenda_terzo_anno"
+            android:layout_marginBottom="@dimen/margin_legenda"
+            android:layout_below="@+id/legenda_secondo_anno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/exam_3_year_bg_color"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_textview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esame del terzo anno"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/legenda_selected_day"
+            android:layout_marginBottom="@dimen/margin_legenda"
+            android:layout_below="@+id/legenda_terzo_anno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/calendar_selected_bg_color"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_textview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giorno selezionato"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/legenda_giorno_attuale"
+            android:layout_below="@+id/legenda_selected_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/calendar_today_bg_color"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_textview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oggi"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
 
 </RelativeLayout>

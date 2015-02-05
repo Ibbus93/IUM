@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Absolute colors -->
+    <color name="red_exam">#FF4D4D</color>
+    <color name="orange_exam">#FFC000</color>
+    <color name="dark_blue_exam">#558ED5</color>
+
+    <color name="light_red">#EEAAAA</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#BBBBBB</color>
+    <color name="light_grey">#EEEEEE</color>
+    <color name="dark_grey">#555555</color>
+
+    <color name="light_blue">#D4FFEB</color>
+    <color name="orange">#FFC000</color>
+    <color name="light_yellow">#FFE86E</color>
+    <color name="pink">#FFCCFF</color>
+    <color name="red">#FF4D4D</color>
+    <color name="light_green">#99FF99</color>
+    <color name="dark_blue">#558ED5</color>
+    <color name="purple">#DDA0DD</color>
+
+    <!-- Application colors -->
+    <color name="error_message_color">@color/red</color>
+    <color name="button_pressed_color">@color/dark_grey</color>
+    <color name="button_not_pressed_color">@color/grey</color>
+    <color name="button_focused_color">@color/light_grey</color>
+    <color name="button_exam_1_color">@color/red_exam</color>
+    <color name="button_exam_2_color">@color/orange_exam</color>
+    <color name="button_exam_3_color">@color/dark_blue_exam</color>
+
+    <!-- Drawables from colors -->
+    <drawable name="button_pressed_drawable">@color/button_pressed_color</drawable>
+    <drawable name="button_not_pressed_drawable">@color/button_not_pressed_color</drawable>
+    <drawable name="button_focused_drawable">@color/button_focused_color</drawable>
+    <drawable name="button_exam_1_color">@color/red_exam</drawable>
+    <drawable name="button_exam_2_color">@color/orange_exam</drawable>
+    <drawable name="button_exam_3_color">@color/dark_blue_exam</drawable>
+
+</resources>
