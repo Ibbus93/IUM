@@ -63,7 +63,7 @@ public class DummyContent {
         // ANNO 3 SEMESTRE 1
         addItem(new DummyItem("17", "Linguaggi di Programmazione", "LIP", "G.M.Pinna", 24, 2, 2015, 26, 9, 3, false));
         addItem(new DummyItem("18", "Basi di Dati 1", "BD1", "Nicoletta Dessì", 25, 2, 2015, 0, 9, 3, false));
-        addItem(new DummyItem("19", "Interazione Uomo Macchima", "IUM", "Davide Spano", 0, 0, 0, 0, 6, 3, false));
+        addItem(new DummyItem("19", "Interazione Uomo Macchina", "IUM", "Davide Spano", 0, 0, 0, 0, 6, 3, false));
         addItem(new DummyItem("20", "Progettazione Sistemi Informatici", "PSI", "Gianni Fenu", 0, 0, 0, 0, 6, 3, false));
 
         // ANNO 3 SEMESTRE 2
@@ -99,8 +99,30 @@ public class DummyContent {
         return result;
     }
 
+    public static boolean isBooked(int gg, int mm, int aa, String exam){
+        boolean result = false;
+
+        for(int i=0;i<ITEMS.size();i++){
+            if(exam.equals(ITEMS.get(i).completeNameExam))
+                if(ITEMS.get(i).aa != 0 && ITEMS.get(i).mm != 0 && ITEMS.get(i).gg != 0)
+                    result = true;
+
+        }
+
+        return result;
+    }
+
     private static void calcVotoPartenza() {
         votoPartenza = mediaPonderata * 11 / 3;
+    }
+
+    public static String getDateOfExam(String exam){
+        for(int i=0;i<ITEMS.size();i++){
+            if(exam.equals(ITEMS.get(i).completeNameExam))
+                return  ITEMS.get(i).getDateString();
+
+        }
+        return null;
     }
 
     private static void calcMedie() {

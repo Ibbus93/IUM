@@ -29,4 +29,10 @@
     <string name="title_activity_add_exam">Aggiungi Esame</string>
     <string name="title_activity_add_event">Aggiungi Evento</string>
 
+    <string name="str_cnt_mnu_edit">Edit</string>
+    <string name="str_cnt_mnu_share">Share</string>
+    <string name="str_cnt_mnu_delete">Delete</string>
+
+    <string name="exam_prompt">Scegli l\'esame</string>
+
 </resources>

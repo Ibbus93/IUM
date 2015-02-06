@@ -681,6 +681,7 @@
     <eat-comment />
 
     <string name="carriera">Carriera</string>
+    <string name="exam_prompt">Scegli l\'esame</string>
     <string name="general">Generali</string>
     <string name="hello_world">Hello world!</string>
     <string name="piano_studi">Piano di studi</string>
@@ -709,6 +710,9 @@
 
     <string name="statistiche">Statistiche</string>
     <string name="stima">Stima</string>
+    <string name="str_cnt_mnu_delete">Delete</string>
+    <string name="str_cnt_mnu_edit">Edit</string>
+    <string name="str_cnt_mnu_share">Share</string>
     <string name="title_activity_add_event">Aggiungi Evento</string>
     <string name="title_activity_add_exam">Aggiungi Esame</string>
     <string name="title_activity_andamento_media_aritmetica">Andamento Media Aritmetica</string>
@@ -727,8 +731,8 @@
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
-    <style name="AppTheme" parent="android:Theme.DeviceDefault.Light">
-<!--  Customize your theme here. android:Theme.DeviceDefault.Light -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. android:Theme.DeviceDefault.Light -->
     </style>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/calendar_chooser.xml -->
     <eat-comment />

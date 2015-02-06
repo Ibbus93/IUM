@@ -6,11 +6,77 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="android.valarmorghulis.unica.it.uniapp.pianostudi.AddEvent">
+    tools:context="android.valarmorghulis.unica.it.uniapp.pianostudi.AddEvent"
+    android:gravity="center"
+    >
 
     <TextView
-        android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scegli l'esame: "
+        android:id="@+id/exam_choice"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_exams"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:prompt="@string/exam_prompt"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scegli la data: "
+        android:id="@+id/date_choice"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinner_exams"
+        />
+
+    <DatePicker
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrizione: "
+        android:id="@+id/insert_description_textview"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_below="@+id/datePicker"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert_description_textview"
+        android:layout_marginTop="10dp"
+        android:id="@+id/description_editText"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_editText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/confirm_button"
+        android:text="Conferma"
+        android:layout_centerHorizontal="true"
+        />
+
+
 
 </RelativeLayout>
