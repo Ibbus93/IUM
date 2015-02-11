@@ -612,6 +612,7 @@
     <eat-comment />
 
     <dimen name="edittext_text_size">18sp</dimen>
+    <dimen name="margin_add_exam">10dp</dimen>
     <dimen name="margin_legenda">10dp</dimen>
     <dimen name="margin_textview_layout">2dp</dimen>
     <dimen name="menu_space_under_buttons">40px</dimen>
@@ -643,7 +644,24 @@
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/ids.xml -->
+    <eat-comment />
+
+    <item name="confirm_button_add_exam" type="id"/>
+    <item name="exam_datePicker" type="id"/>
+    <item name="grade_spinner" type="id"/>
+    <item name="grade_textView" type="id"/>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <eat-comment />
+
     <item name="home" type="id"/>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/ids.xml -->
+    <eat-comment />
+
+    <item name="in_data_textview" type="id"/>
+    <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <eat-comment />
+
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
 
@@ -684,6 +702,8 @@
     <string name="exam_prompt">Scegli l\'esame</string>
     <string name="general">Generali</string>
     <string name="hello_world">Hello world!</string>
+    <string name="in_data_textView">In data:</string>
+    <string name="name_exam_textView">Nome esame: </string>
     <string name="piano_studi">Piano di studi</string>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/placeholders.xml -->
     <eat-comment />
@@ -708,6 +728,7 @@
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="prof_name_textView">Nome docente: </string>
     <string name="statistiche">Statistiche</string>
     <string name="stima">Stima</string>
     <string name="str_cnt_mnu_delete">Delete</string>
@@ -728,6 +749,7 @@
     <string name="title_activity_stima">Stima</string>
     <string name="title_esame_detail">Esame Detail</string>
     <string name="title_esame_list">Esami</string>
+    <string name="voto_textView">Voto: </string>
     <!-- From: file:/C:/Users/Samsung/AndroidStudioProjects/uniApp/app/src/main/res/values/styles.xml -->
     <eat-comment />
 

@@ -7,7 +7,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@color/white"
-    tools:context="android.valarmorghulis.unica.it.uniapp.PianoStudi"
+    tools:context="android.valarmorghulis.unica.it.uniapp.pianostudi.PianoStudi"
     android:id="@+id/cal"
     >
 

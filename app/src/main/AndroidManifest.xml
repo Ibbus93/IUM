@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Stima"
+            android:name=".stima.Stima"
             android:configChanges="orientation"
             android:label="@string/title_activity_stima"
             android:parentActivityName=".MainActivity"
@@ -36,7 +36,7 @@
                 android:value="android.valarmorghulis.unica.it.uniapp.MainActivity" />
         </activity>
         <activity
-            android:name=".PianoStudi"
+            android:name=".pianostudi.PianoStudi"
             android:configChanges="orientation"
             android:label="@string/piano_studi"
             android:parentActivityName=".MainActivity"
@@ -46,7 +46,7 @@
                 android:value="android.valarmorghulis.unica.it.uniapp.MainActivity" />
         </activity>
         <activity
-            android:name=".Statistiche"
+            android:name=".statistiche.Statistiche"
             android:configChanges="orientation"
             android:label="@string/title_activity_statistiche"
             android:parentActivityName=".MainActivity"
@@ -76,7 +76,7 @@
         <activity
             android:name=".statistiche.GeneralStat"
             android:label="@string/title_activity_general_stat"
-            android:parentActivityName=".Statistiche"
+            android:parentActivityName=".statistiche.Statistiche"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -85,7 +85,7 @@
         <activity
             android:name=".statistiche.AndamentoVoti"
             android:label="@string/title_activity_andamento_voti"
-            android:parentActivityName=".Statistiche"
+            android:parentActivityName=".statistiche.Statistiche"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -94,7 +94,7 @@
         <activity
             android:name=".statistiche.AndamentoMediaAritmetica"
             android:label="@string/title_activity_andamento_media_aritmetica"
-            android:parentActivityName=".Statistiche"
+            android:parentActivityName=".statistiche.Statistiche"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -103,7 +103,7 @@
         <activity
             android:name=".statistiche.AndamentoMediaPonderata"
             android:label="@string/title_activity_andamento_media_ponderata"
-            android:parentActivityName=".Statistiche"
+            android:parentActivityName=".statistiche.Statistiche"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -121,7 +121,7 @@
         <activity
             android:name=".pianostudi.AddEvent"
             android:label="@string/title_activity_add_event"
-            android:parentActivityName=".PianoStudi"
+            android:parentActivityName=".pianostudi.PianoStudi"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

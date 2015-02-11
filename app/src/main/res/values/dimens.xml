@@ -8,6 +8,7 @@
     <dimen name="menu_space_value">25px</dimen>
     <dimen name="text_detail_fragment">30px</dimen>
 
+    <dimen name="margin_add_exam">10dp</dimen>
 
     <dimen name="button_margin_bottom">25dp</dimen>
     <dimen name="button_menu_padding">15dp</dimen>

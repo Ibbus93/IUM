@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
-import android.valarmorghulis.unica.it.uniapp.PianoStudi;
 import android.valarmorghulis.unica.it.uniapp.R;
 import android.view.Menu;
 import android.view.MenuItem;

@@ -1,16 +1,208 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="android.valarmorghulis.unica.it.uniapp.carriera.AddExam">
+    >
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/add_exam_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="android.valarmorghulis.unica.it.uniapp.carriera.AddExam">
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_exam_textView"
+            android:id="@+id/name_exam_textview"
+            android:layout_marginTop="@dimen/margin_add_exam" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_exam_textview"
+            android:id="@+id/name_exam_editText"
+            android:maxLength="36"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_exam_editText"
+            android:text="@string/prof_name_textView"
+            android:id="@+id/prof_name_textview"
+            android:layout_marginTop="@dimen/margin_add_exam" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prof_name_textview"
+            android:id="@+id/name_prof_editText"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_prof_editText"
+            android:text="Sigla esame (max 4 caratteri):"
+            android:id="@+id/sigla_exam_textview"
+            android:layout_marginTop="@dimen/margin_add_exam"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sigla_exam_textview"
+            android:id="@+id/sigla_exam_editText"
+            android:maxLength="4"
+             />
+<!-- Anno -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anno:"
+            android:id="@+id/anno_textview"
+            android:layout_marginTop="@dimen/margin_add_exam"
+            android:layout_below="@+id/sigla_exam_editText"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/anno_edittext"
+            android:layout_toRightOf="@+id/anno_textview"
+            android:layout_below="@+id/sigla_exam_editText"
+            android:maxLength="1"
+            android:inputType="number"
+            android:layout_marginRight="10dp" />
+<!-- Semestre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semestre:"
+            android:id="@+id/semestre_textview"
+            android:layout_marginTop="@dimen/margin_add_exam"
+            android:layout_below="@+id/sigla_exam_editText"
+            android:layout_toRightOf="@+id/anno_edittext"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/semestre_edittext"
+            android:layout_toRightOf="@+id/semestre_textview"
+            android:layout_below="@+id/sigla_exam_editText"
+            android:maxLength="1"
+            android:inputType="number"
+            android:layout_marginRight="10dp" />
+<!-- Crediti -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crediti:"
+            android:id="@+id/crediti_textview"
+            android:layout_toRightOf="@+id/semestre_edittext"
+            android:layout_marginTop="@dimen/margin_add_exam"
+            android:layout_below="@+id/sigla_exam_editText"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/crediti_edittext"
+            android:layout_toRightOf="@+id/crediti_textview"
+            android:layout_below="@+id/sigla_exam_editText"
+            android:maxLength="2"
+            android:inputType="number"
+            android:layout_marginRight="10dp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anno_textview"
+            android:id="@+id/radiogroup"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin_add_exam">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esame da dare"
+                android:checked="true"
+                android:id="@+id/esame_da_dare_radiobutton"
+                android:layout_below="@+id/name_prof_editText"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esame prenotato"
+                android:id="@+id/esame_prenotato_radiobutton"
+                android:layout_below="@+id/esame_da_dare_radiobutton"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esame passato"
+                android:id="@+id/esame_passato_radiobutton"
+                android:layout_below="@+id/esame_prenotato_radiobutton"
+                android:layout_alignParentStart="true" />
+
+        </RadioGroup>
+
+        <!-- Da qui dinamici -->
+<!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/in_data_textView"
+            android:id="@+id/in_data_textview"
+            android:layout_below="@+id/radiogroup"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin_add_exam" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exam_datePicker"
+            android:layout_below="@+id/in_data_textview"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_add_exam"
+            android:calendarViewShown="false"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voto: "
+            android:id="@+id/grade_textView"
+            android:layout_below="@+id/exam_datePicker"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grade_spinner"
+            android:layout_below="@+id/exam_datePicker"
+            android:layout_alignStart="@+id/exam_datePicker"
+            android:layout_marginLeft="36dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conferma"
+            android:id="@+id/confirm_button_add_exam"
+            android:layout_below="@+id/grade_spinner"
+            android:layout_centerHorizontal="true" />
+-->
+    </RelativeLayout>
+</ScrollView>

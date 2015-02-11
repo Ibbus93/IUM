@@ -7,7 +7,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@color/blue"
-    tools:context="android.valarmorghulis.unica.it.uniapp.Stima">
+    tools:context="android.valarmorghulis.unica.it.uniapp.stima.Stima">
 
     <TextView
         android:layout_width="match_parent"

@@ -35,4 +35,9 @@
 
     <string name="exam_prompt">Scegli l\'esame</string>
 
+    <string name="name_exam_textView">Nome esame: </string>
+    <string name="prof_name_textView">Nome docente: </string>
+    <string name="in_data_textView">In data:</string>
+    <string name="voto_textView">Voto: </string>
+
 </resources>

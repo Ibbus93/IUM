@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="android.valarmorghulis.unica.it.uniapp.PianoStudi" >
+    tools:context="android.valarmorghulis.unica.it.uniapp.pianostudi.PianoStudi" >
 
     <item
         android:id="@+id/add_event"

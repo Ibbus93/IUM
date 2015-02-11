@@ -1,14 +1,11 @@
-package android.valarmorghulis.unica.it.uniapp;
+package android.valarmorghulis.unica.it.uniapp.statistiche;
 
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.valarmorghulis.unica.it.uniapp.statistiche.AndamentoMediaAritmetica;
-import android.valarmorghulis.unica.it.uniapp.statistiche.AndamentoMediaPonderata;
-import android.valarmorghulis.unica.it.uniapp.statistiche.AndamentoVoti;
-import android.valarmorghulis.unica.it.uniapp.statistiche.GeneralStat;
+import android.valarmorghulis.unica.it.uniapp.R;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;

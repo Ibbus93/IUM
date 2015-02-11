@@ -497,7 +497,7 @@ public class CalendarChooser extends FrameLayout {
     /**
      * This utility method updates the UI when the current date changes
      */
-    private void updateUI() {
+    public void updateUI() {
         // We remove all items from layout
         mDayNamesContainer.removeAllViews();
         mDaysContainer.removeAllViews();
@@ -589,8 +589,8 @@ public class CalendarChooser extends FrameLayout {
                             ITEMS.get(DummyContent.selected).aa == currentYear &&
                             ITEMS.get(DummyContent.selected).getDateString() != null
                        ) {
-                   System.out.println("Sono qui, devi dare " + ITEMS.get(DummyContent.selected).completeNameExam);
-                   System.out.println("Anno: " + ITEMS.get(DummyContent.selected).aa + ", todayYear: "+ todayYear + ", currentYear :" + currentYear);
+                   Log.d(TAG_LOG, "Sono qui, devi dare " + ITEMS.get(DummyContent.selected).completeNameExam);
+                   Log.d(TAG_LOG, "Anno: " + ITEMS.get(DummyContent.selected).aa + ", todayYear: "+ todayYear + ", currentYear :" + currentYear);
                     // There is an exam to pass!
                    switch (ITEMS.get(DummyContent.selected).year) {
                        case 1: dayTextView.setFirstYear(true);
