@@ -82,7 +82,7 @@ public class DummyContent {
 
 
 
-    private static void addItem(DummyItem item) {
+    public static void addItem(DummyItem item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
 
@@ -97,6 +97,17 @@ public class DummyContent {
         }
         calcMedie();
         calcVotoPartenza();
+    }
+
+    public static boolean isExamExisting(String nameExam, String siglaExam){
+        boolean result = false;
+
+        for(int i=0;i<ITEMS.size();i++){
+            if(ITEMS.get(i).completeNameExam.equals(nameExam) || ITEMS.get(i).nameExam.equals(siglaExam))
+                result = true;
+
+        }
+        return result;
     }
 
     public static boolean isPresent(int currentDayInYear, int year){
@@ -255,7 +266,7 @@ public class DummyContent {
             }
 
             this.aa = aa;
-            this.mm = mm;
+            this.mm = mm+1;
             this.gg = gg;
             this.grade = grade;
             this.crediti = crediti;
@@ -263,12 +274,14 @@ public class DummyContent {
             this.semestre = semestre;
             this.lode = lode;
 
-            if(this.grade >= 10) // 10 idoneità
-                this.done = 1; //exam passed
-            else if(this.dateExam != null)
-                this.done = 0;  //exam booked
-            else
-                this.done = -1; //exam not still done / booked
+            if(this.grade >=10)
+                this.done = 1;
+            if(this.grade == 0)
+                if(this.getDateString() == null)
+                    this.done = -1;
+                else
+                    this.done = 0;
+
         }
 
         public String getDateString(){

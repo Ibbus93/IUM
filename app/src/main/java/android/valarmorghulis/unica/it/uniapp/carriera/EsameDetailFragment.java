@@ -2,6 +2,7 @@ package android.valarmorghulis.unica.it.uniapp.carriera;
 
 import android.os.Bundle;
 import android.app.Fragment;
+import android.util.Log;
 import android.valarmorghulis.unica.it.uniapp.R;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,9 @@ import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
  * on handsets.
  */
 public class EsameDetailFragment extends Fragment{
+
+    public static final String TAG_LOG = EsameDetailFragment.class.getName();
+
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
@@ -73,6 +77,7 @@ public class EsameDetailFragment extends Fragment{
             ((TextView) rootView.findViewById(R.id.exam_name_textView)).setText(mItem.completeNameExam);
             ((TextView) rootView.findViewById(R.id.prof_name_textView)).setText(mItem.nameProf);
 
+            Log.d(TAG_LOG, "Esame: " + mItem.toString() + ", voto: " + mItem.grade + ", done: " + mItem.done);
 
             if(mItem.done > 0) {
                 ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame passato");
@@ -83,7 +88,7 @@ public class EsameDetailFragment extends Fragment{
                     ((TextView) rootView.findViewById(R.id.label_in_data)).setVisibility(View.INVISIBLE);
                 } else {
                     ((TextView) rootView.findViewById(R.id.to_do_textView)).setText("Esame prenotato");
-                    ((TextView) rootView.findViewById(R.id.label_in_data)).setText("In data: "+ mItem.dateExam);
+                    ((TextView) rootView.findViewById(R.id.label_in_data)).setText("In data: "+ mItem.getDateString());
                 }
             }
 

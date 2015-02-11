@@ -2,12 +2,8 @@ package android.valarmorghulis.unica.it.uniapp.carriera;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-import android.text.Editable;
-import android.util.Log;
 import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
-import android.valarmorghulis.unica.it.uniapp.pianostudi.AddEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.valarmorghulis.unica.it.uniapp.R;
@@ -18,19 +14,13 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 public class AddExam extends Activity {
 
@@ -148,7 +138,6 @@ public class AddExam extends Activity {
 
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Calendar calendar = Calendar.getInstance();
                 if (isChecked) {
                     if (!isInDataSet) {
                         relativeLayout.addView(inData);
@@ -194,10 +183,10 @@ public class AddExam extends Activity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int gg, mm, aa;
+                int gg = 0, mm = 0, aa = 0;
                 String dateToCheck;
-                int grade;
-                boolean lode;
+                int grade=0;
+                boolean lode = false;
 
                 EditText nameExamEdit = (EditText) findViewById(R.id.name_exam_editText);
                 String nameExam = nameExamEdit.getText().toString().trim();
@@ -209,80 +198,97 @@ public class AddExam extends Activity {
                 String siglaExam = siglaExamEdit.getText().toString().trim();
 
                 EditText annoEdit = (EditText) findViewById(R.id.anno_edittext);
-                String anno = annoEdit.getText().toString().trim();
+                String auxanno = annoEdit.getText().toString().trim();
 
                 EditText semestreEdit = (EditText) findViewById(R.id.semestre_edittext);
-                String semestre = semestreEdit.getText().toString().trim();
+                String auxsemestre = semestreEdit.getText().toString().trim();
 
                 EditText creditiEdit = (EditText) findViewById(R.id.crediti_edittext);
-                String crediti = creditiEdit.getText().toString().trim();
+                String auxcrediti = creditiEdit.getText().toString().trim();
 
                 validate = true;
 
-                if(nameExam.length() == 0) {
+                if (nameExam.length() == 0) {
                     toast("Inserisci il nome dell'esame");
                     validate = false;
-                } else if(nameDoc.length() == 0){
+                } else if (nameDoc.length() == 0) {
                     toast("Inserisci il nome del docente");
                     validate = false;
-                } else if(siglaExam.length() == 0){
+                } else if (siglaExam.length() == 0) {
                     toast("Inserisci la sigla dell'esame");
                     validate = false;
-                } else if(anno.length() == 0){
+                } else if (auxanno.length() == 0) {
                     toast("Inserisci l'anno dell'esame");
                     validate = false;
-                }else if(semestre.length() == 0) {
+                } else if (auxsemestre.length() == 0) {
                     toast("Inserisci il semestre dell'esame");
                     validate = false;
-                }else if(crediti.length() == 0) {
+                } else if (auxcrediti.length() == 0) {
                     toast("Inserisci i crediti dell'esame");
                     validate = false;
                 }
 
-                    if(validate){
-                    // Se ho scelto il voto, aggiungere il voto
-                    if(isGradeSet){
-                        gg = datePicker.getDayOfMonth();
-                        mm = datePicker.getMonth() + 1;
-                        aa = datePicker.getYear();
-                        dateToCheck = gg+"/"+mm+"/"+aa;
-                        if(((String) spinner.getSelectedItem()).equals("30 e lode")) {
-                            grade = 30;
-                            lode = true;
-                        }else{
-                            grade =  Integer.parseInt((String) spinner.getSelectedItem());
-                            lode = false;
-                        }
+                if (validate) {
+                    int anno = Integer.parseInt(auxanno);
+                    int semestre = Integer.parseInt(auxsemestre);
+                    int crediti = Integer.parseInt(auxcrediti);
 
-                        if(DummyContent.isTheDateBusy(dateToCheck)){
-                            toast("La data scelta è già occupata");
-                        }else {
-                            toast("Aggiungo l'esame passato");
-                        }
-                    }else if(isInDataSet){
-                        // Se l'esame è prenotato, aggiungerlo se la data è libera
-                        gg = datePicker.getDayOfMonth();
-                        mm = datePicker.getMonth();
-                        aa = datePicker.getYear();
-                        dateToCheck = aa+"/"+mm+"/"+gg;
+                    // Se il nome dell'esame non esiste già
+                    if (!DummyContent.isExamExisting(nameExam, siglaExam)) {
+                        // Se ho scelto il voto, aggiungere il voto
+                        if(!verifyAsc(anno, semestre)) {
+                            if (isGradeSet) {
+                                gg = datePicker.getDayOfMonth();
+                                mm = datePicker.getMonth() + 1;
+                                aa = datePicker.getYear();
+                                dateToCheck = gg + "/" + mm + "/" + aa;
+                                if (((String) spinner.getSelectedItem()).equals("30 e lode")) {
+                                    grade = 30;
+                                    lode = true;
+                                } else {
+                                    grade = Integer.parseInt((String) spinner.getSelectedItem());
+                                    lode = false;
+                                }
 
-                        Calendar dtc = Calendar.getInstance();
-                        dtc.set(aa, mm, gg);
-                        Calendar gc = Calendar.getInstance();
-                        gc.add(Calendar.DATE, 1);
+                                if (DummyContent.isTheDateBusy(dateToCheck)) {
+                                    toast("La data scelta è già occupata");
+                                } else {
+                                    toast("Aggiungo l'esame passato");
+                                    DummyContent.addItem(new DummyContent.DummyItem("21", nameExam, siglaExam, nameDoc, gg, (mm+1), aa, grade, crediti, anno, semestre, lode));
+                                }
+                            } else if (isInDataSet) {
+                                // Se l'esame è prenotato, aggiungerlo se la data è libera
+                                gg = datePicker.getDayOfMonth();
+                                mm = datePicker.getMonth();
+                                aa = datePicker.getYear();
+                                dateToCheck = aa + "/" + mm + "/" + gg;
 
-                        if(DummyContent.isTheDateBusy(dateToCheck)){
-                            toast("La data scelta è già occupata");
-                        }else {
-                            if(dtc.before(gc))
-                                toast("DateToCheck viene prima di domani");
-                            if(dtc.after(gc) || dtc.equals(gc)) {
-                                toast("DateToCheck viene dopo domani oppure e' domani!");
-                                toast("Aggiungo l'esame prenotato");
+                                Calendar dtc = Calendar.getInstance();
+                                dtc.set(aa,mm,gg);
+
+                                Calendar gc = Calendar.getInstance();
+                                gc.add(Calendar.DATE, 1);
+
+                                if (DummyContent.isTheDateBusy(dateToCheck)) {
+                                    toast("La data scelta è già occupata");
+                                } else {
+                                    if (dtc.before(gc))
+                                        toast("DateToCheck viene prima di domani");
+                                    if (dtc.after(gc) || dtc.equals(gc)) {
+                                        toast("DateToCheck viene dopo domani oppure e' domani!");
+                                        toast("Aggiungo l'esame prenotato");
+                                        DummyContent.addItem(new DummyContent.DummyItem("21", nameExam, siglaExam, nameDoc, gg, (mm+1), aa, grade, crediti, anno, semestre, lode));
+                                    }
+                                }
+                            } else{
+                                toast("Aggiungo l'esame da dare");
+                                DummyContent.addItem(new DummyContent.DummyItem("21", nameExam, siglaExam, nameDoc, gg, mm, aa, grade, crediti, anno, semestre, lode));
                             }
+                        }else{
+                            toast("Errore: l'anno dev'essere compreso tra 1 e 3, il semestre dev'essere uguale a 1 o 2");
                         }
-                    }else {
-                        toast("Aggiungo l'esame da dare");
+                    } else {
+                        toast("Errore: esame già esistente!");
                     }
                 }
             }
@@ -293,6 +299,13 @@ public class AddExam extends Activity {
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 
+    private boolean verifyAsc (int aa, int sem){
+        if(aa >= 1 && aa <=3)
+            if(sem == 1 || sem == 2)
+                return false;
+
+        return true;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
