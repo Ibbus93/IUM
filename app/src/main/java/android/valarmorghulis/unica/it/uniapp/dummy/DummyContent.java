@@ -29,12 +29,12 @@ public class DummyContent {
     public static int totCreditiSenzaIdo = 0;
     public static int sumArt = 0;
     public static int sumPond = 0;
-    public static double mediaAritmetica;
-    public static double mediaPonderata;
-    public static double votoPartenza;
+    public static double mediaAritmetica = 0;
+    public static double mediaPonderata = 0;
+    public static double votoPartenza = 0;
     public static int selected;
     public static String examWhoOccupyTheDate;
-    public static final int contID = 0;
+    public static int contID = 0;
 
     /**
      * A map of sample (dummy) items, by ID.
@@ -43,7 +43,7 @@ public class DummyContent {
 
     static {
 
-
+/*
 
         // Add items.
         // ANNO 1 SEMESTRE 1
@@ -77,7 +77,7 @@ public class DummyContent {
         addItem(new DummyItem("20", "Progettazione Sistemi Informatici", "PSI", "Gianni Fenu", 0, 0, 0, 0, 6, 3, 1, false));
 
         // ANNO 3 SEMESTRE 2
-        //addItem(new DummyItem("21", "Ingegneria del Software", "ISW", "Andrea Casanova", 0, 0, 0, 0, 9, 3, 2, false));
+        //addItem(new DummyItem("21", "Ingegneria del Software", "ISW", "Andrea Casanova", 0, 0, 0, 0, 9, 3, 2, false));*/
     }
 
 

@@ -254,7 +254,7 @@ public class AddExam extends Activity {
                                     toast("La data scelta è già occupata");
                                 } else {
                                     toast("Aggiungo l'esame passato");
-                                    DummyContent.addItem(new DummyContent.DummyItem("21", nameExam, siglaExam, nameDoc, gg, (mm+1), aa, grade, crediti, anno, semestre, lode));
+                                    DummyContent.addItem(new DummyContent.DummyItem(Integer.valueOf(DummyContent.contID++).toString(), nameExam, siglaExam, nameDoc, gg, (mm+1), aa, grade, crediti, anno, semestre, lode));
                                 }
                             } else if (isInDataSet) {
                                 // Se l'esame è prenotato, aggiungerlo se la data è libera
@@ -277,12 +277,12 @@ public class AddExam extends Activity {
                                     if (dtc.after(gc) || dtc.equals(gc)) {
                                         toast("DateToCheck viene dopo domani oppure e' domani!");
                                         toast("Aggiungo l'esame prenotato");
-                                        DummyContent.addItem(new DummyContent.DummyItem("21", nameExam, siglaExam, nameDoc, gg, (mm+1), aa, grade, crediti, anno, semestre, lode));
+                                        DummyContent.addItem(new DummyContent.DummyItem(Integer.valueOf(DummyContent.contID++).toString(), nameExam, siglaExam, nameDoc, gg, (mm+1), aa, grade, crediti, anno, semestre, lode));
                                     }
                                 }
                             } else{
                                 toast("Aggiungo l'esame da dare");
-                                DummyContent.addItem(new DummyContent.DummyItem("21", nameExam, siglaExam, nameDoc, gg, mm, aa, grade, crediti, anno, semestre, lode));
+                                DummyContent.addItem(new DummyContent.DummyItem(Integer.valueOf(DummyContent.contID++).toString(), nameExam, siglaExam, nameDoc, gg, mm, aa, grade, crediti, anno, semestre, lode));
                             }
                         }else{
                             toast("Errore: l'anno dev'essere compreso tra 1 e 3, il semestre dev'essere uguale a 1 o 2");

@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 
 import android.valarmorghulis.unica.it.uniapp.dummy.DummyContent;
+import android.widget.TextView;
 
 /**
  * A list fragment representing a list of Esami. This fragment
@@ -42,6 +43,7 @@ public class EsameListFragment extends ListFragment {
      * implement. This mechanism allows activities to be notified of item
      * selections.
      */
+
     public interface Callbacks {
         /**
          * Callback for when an item has been selected.
@@ -70,16 +72,10 @@ public class EsameListFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // TODO: replace with a real list adapter.
-        /*setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
-                getActivity(),
-                android.R.layout.simple_list_item_activated_1,
-                android.R.id.text1,
-                DummyContent.ITEMS));*/
-
         CustomArrayAdapter adapt = new CustomArrayAdapter(getActivity(), DummyContent.ITEMS);
         setListAdapter(adapt);
     }
+
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
